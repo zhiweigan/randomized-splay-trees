@@ -17,6 +17,7 @@ void RandomTest::Insert(int n, SplayTree* tree) { // Inserts n items between 1 t
 void RandomTest::RunOnTrees(map<string, SplayTree*>* trees) {
     int trials[4] = {1000, 10000, 100000, 1000000};
 
+    cout<<setfill('-')<<setw(40)<<"-"<<setfill(' ')<<endl;
     cout<<"Random"<<endl;
     cout<<setfill('-')<<setw(40)<<"-"<<setfill(' ')<<endl; // For pretty formatting
     for(pair<string, SplayTree*> tree : *trees){
