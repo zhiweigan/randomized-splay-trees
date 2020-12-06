@@ -1,11 +1,11 @@
 //
-// Created by Zhi Wei Gan on 11/25/20.
+// Created by Zhi Wei Gan on 12/6/20.
 //
 
 #include "tests.h"
 using namespace std;
 
-void RandomTest::Insert(int n, SplayTree* tree) { // Inserts n items between 1 to n at random
+void HuffmanCoding::Insert(int n, SplayTree* tree) { // Inserts n items between 1 to n at random
     s* root = nullptr;
     default_random_engine generator;
     uniform_int_distribution<int> distribution(0, n-1);
@@ -16,7 +16,7 @@ void RandomTest::Insert(int n, SplayTree* tree) { // Inserts n items between 1 t
     tree->Clear(root);
 }
 
-void RandomTest::Mixed(int  n, SplayTree* tree) {
+void HuffmanCoding::Mixed(int  n, SplayTree* tree) {
     s* root = nullptr;
     default_random_engine generator;
     uniform_int_distribution<int> distribution(0, n-1);
@@ -42,7 +42,7 @@ void RandomTest::Mixed(int  n, SplayTree* tree) {
 }
 
 
-void RandomTest::RunOnTrees(map<string, SplayTree*>* trees) {
+void HuffmanCoding::RunOnTrees(map<string, SplayTree*>* trees) {
     int trials[4] = {1000, 10000, 100000, 1000000};
 
     cout<<"Testing RandomTest"<<endl;
@@ -50,7 +50,7 @@ void RandomTest::RunOnTrees(map<string, SplayTree*>* trees) {
                                                       "N",
                                                       "Insert Only [ms]",
                                                       "Mixed(Insert, Access, Delete) [ms]"},
-                                                            10);
+                                                     10);
 
     for(pair<string, SplayTree*> tree : *trees){
         vt.addRow(tree.first, "", "", "");

@@ -6,17 +6,20 @@
 Tester::Tester(){
     // Trees
     SplayTree* vanillaT = new SplayTree();
-    TemplateSplayTree* templateT = new TemplateSplayTree();
+    HalfSplayTree* halfT = new HalfSplayTree();
+//    TemplateSplayTree* templateT = new TemplateSplayTree();
 
     trees = new map<string, SplayTree*>();
     trees->insert(make_pair("0: Vanilla", vanillaT)); // We need a name as well as the tree pointer
-    trees->insert(make_pair("1: Template", templateT));
+    trees->insert(make_pair("1: Half Splay", halfT));
+//    trees->insert(make_pair("1: Template", templateT));
 
     // Tests
     RandomTest* randomTest = new RandomTest();
-
+    ZipfTest* zipfTest = new ZipfTest();
     tests = new vector<Test*>();
     tests->push_back(randomTest);
+    tests->push_back(zipfTest);
 }
 
 //======================================================================================================================

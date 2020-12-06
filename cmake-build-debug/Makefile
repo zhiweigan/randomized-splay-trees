@@ -170,6 +170,33 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+tests/compression.o: tests/compression.cpp.o
+
+.PHONY : tests/compression.o
+
+# target to build an object file
+tests/compression.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/tests/compression.cpp.o
+.PHONY : tests/compression.cpp.o
+
+tests/compression.i: tests/compression.cpp.i
+
+.PHONY : tests/compression.i
+
+# target to preprocess a source file
+tests/compression.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/tests/compression.cpp.i
+.PHONY : tests/compression.cpp.i
+
+tests/compression.s: tests/compression.cpp.s
+
+.PHONY : tests/compression.s
+
+# target to generate assembly for a file
+tests/compression.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/tests/compression.cpp.s
+.PHONY : tests/compression.cpp.s
+
 tests/random.o: tests/random.cpp.o
 
 .PHONY : tests/random.o
@@ -223,6 +250,60 @@ tests/tester.s: tests/tester.cpp.s
 tests/tester.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/tests/tester.cpp.s
 .PHONY : tests/tester.cpp.s
+
+tests/zipf.o: tests/zipf.cpp.o
+
+.PHONY : tests/zipf.o
+
+# target to build an object file
+tests/zipf.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/tests/zipf.cpp.o
+.PHONY : tests/zipf.cpp.o
+
+tests/zipf.i: tests/zipf.cpp.i
+
+.PHONY : tests/zipf.i
+
+# target to preprocess a source file
+tests/zipf.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/tests/zipf.cpp.i
+.PHONY : tests/zipf.cpp.i
+
+tests/zipf.s: tests/zipf.cpp.s
+
+.PHONY : tests/zipf.s
+
+# target to generate assembly for a file
+tests/zipf.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/tests/zipf.cpp.s
+.PHONY : tests/zipf.cpp.s
+
+trees/halfsplay.o: trees/halfsplay.cpp.o
+
+.PHONY : trees/halfsplay.o
+
+# target to build an object file
+trees/halfsplay.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/halfsplay.cpp.o
+.PHONY : trees/halfsplay.cpp.o
+
+trees/halfsplay.i: trees/halfsplay.cpp.i
+
+.PHONY : trees/halfsplay.i
+
+# target to preprocess a source file
+trees/halfsplay.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/halfsplay.cpp.i
+.PHONY : trees/halfsplay.cpp.i
+
+trees/halfsplay.s: trees/halfsplay.cpp.s
+
+.PHONY : trees/halfsplay.s
+
+# target to generate assembly for a file
+trees/halfsplay.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/halfsplay.cpp.s
+.PHONY : trees/halfsplay.cpp.s
 
 trees/template.o: trees/template.cpp.o
 
@@ -290,12 +371,21 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... tests/compression.o"
+	@echo "... tests/compression.i"
+	@echo "... tests/compression.s"
 	@echo "... tests/random.o"
 	@echo "... tests/random.i"
 	@echo "... tests/random.s"
 	@echo "... tests/tester.o"
 	@echo "... tests/tester.i"
 	@echo "... tests/tester.s"
+	@echo "... tests/zipf.o"
+	@echo "... tests/zipf.i"
+	@echo "... tests/zipf.s"
+	@echo "... trees/halfsplay.o"
+	@echo "... trees/halfsplay.i"
+	@echo "... trees/halfsplay.s"
 	@echo "... trees/template.o"
 	@echo "... trees/template.i"
 	@echo "... trees/template.s"

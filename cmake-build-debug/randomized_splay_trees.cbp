@@ -83,6 +83,9 @@
 		<Unit filename="/Users/zhiweigan/Documents/randomized-splay-trees/main.cpp">
 			<Option target="randomized_splay_trees"/>
 		</Unit>
+		<Unit filename="/Users/zhiweigan/Documents/randomized-splay-trees/tests/compression.cpp">
+			<Option target="randomized_splay_trees"/>
+		</Unit>
 		<Unit filename="/Users/zhiweigan/Documents/randomized-splay-trees/tests/random.cpp">
 			<Option target="randomized_splay_trees"/>
 		</Unit>
@@ -90,6 +93,12 @@
 			<Option target="randomized_splay_trees"/>
 		</Unit>
 		<Unit filename="/Users/zhiweigan/Documents/randomized-splay-trees/tests/tests.h">
+			<Option target="randomized_splay_trees"/>
+		</Unit>
+		<Unit filename="/Users/zhiweigan/Documents/randomized-splay-trees/tests/zipf.cpp">
+			<Option target="randomized_splay_trees"/>
+		</Unit>
+		<Unit filename="/Users/zhiweigan/Documents/randomized-splay-trees/trees/halfsplay.cpp">
 			<Option target="randomized_splay_trees"/>
 		</Unit>
 		<Unit filename="/Users/zhiweigan/Documents/randomized-splay-trees/trees/template.cpp">

@@ -11,13 +11,18 @@ int main() {
     Tester tester;
     tester.runAllTestsAllTrees();
 
-    SplayTree tempTree;
-    tester.runAllTestsOneTree(&tempTree, "tempTree");
 
-    RandomTest randomTest;
-    tester.runOneTestAllTrees(&randomTest);
+//    SplayTree vanilla;
+//    tester.runAllTestsOneTree(&vanilla, "Vanilla");
 
-    tester.runOneTestOneTree(&tempTree, &randomTest, "tempTree");
+//    ZipfTest test;
+//    vector<double> res = test.MakeDist(10, 1.07);
+
+//    RandomTest randomTest;
+//    tester.runOneTestAllTrees(&randomTest);
+//
+//    tester.runOneTestOneTree(&tempTree, &randomTest, "tempTree");
+
 
     return 0;
 }

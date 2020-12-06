@@ -8,12 +8,18 @@
 #include <iostream>
 #include <cstdio>
 #include <cstdlib>
+#include <random>
 
 struct s
 {
     int k;
     s* lch;
     s* rch;
+};
+
+struct sComp : s
+{
+    double weight;
 };
 
 class SplayTree
@@ -29,6 +35,19 @@ public:
     virtual s* Search(int key, s* root);
     void InOrder(s* root);
     void Clear(s* root);
+};
+
+class HalfSplayTree : public SplayTree
+{
+private:
+//    s* RR_Rotate(s* k2);
+//    s* LL_Rotate(s* k2);
+    s* Splay(int key, s* root);
+//    s* New_Node(int key);
+//public:
+//    s* Insert(int key, s* root);
+//    s* Delete(int key, s* root);
+//    s* Search(int key, s* root);
 };
 
 // Uncomment ONLY the ones you want to implement
