@@ -87,3 +87,25 @@ s* ThreeRotSplayTree::Search(int key)
     }
     return nullptr;
 }
+
+void OneRotSplayTree::AccessSplay(s* x)
+{
+    while (x->parent) {
+        if (x->parent->left == x) R_Rotate(x->parent);
+        else L_Rotate(x->parent);
+    }
+}
+
+s* OneRotSplayTree::Search(int key)
+{
+    s *z = root;
+    while (z) {
+        if (z->key < key) z = z->right;
+        else if (key < z->key) z = z->left;
+        else {
+            this->AccessSplay(z);
+            return z;
+        }
+    }
+    return nullptr;
+}
