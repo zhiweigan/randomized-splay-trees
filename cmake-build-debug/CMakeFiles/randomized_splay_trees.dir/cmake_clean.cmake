@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/randomized_splay_trees.dir/tests/splayline.cpp.o"
   "CMakeFiles/randomized_splay_trees.dir/tests/tester.cpp.o"
   "CMakeFiles/randomized_splay_trees.dir/tests/zipf.cpp.o"
+  "CMakeFiles/randomized_splay_trees.dir/trees/evenScheme.cpp.o"
   "CMakeFiles/randomized_splay_trees.dir/trees/kRotScheme.cpp.o"
   "CMakeFiles/randomized_splay_trees.dir/trees/probabilisticKRot.cpp.o"
   "CMakeFiles/randomized_splay_trees.dir/trees/regularBST.cpp.o"

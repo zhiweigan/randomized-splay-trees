@@ -141,6 +141,14 @@ public:
     s* Search(int key);
 };
 
+class EvenSplayTree : public SplayTree
+{
+    void AccessSplay(s* x);
+public:
+    EvenSplayTree() : SplayTree() {}
+    s* Search(int key);
+};
+
 // Uncomment ONLY the ones you want to implement
 class TemplateSplayTree : public SplayTree
 {

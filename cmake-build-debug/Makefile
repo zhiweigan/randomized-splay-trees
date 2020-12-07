@@ -305,6 +305,33 @@ tests/zipf.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/tests/zipf.cpp.s
 .PHONY : tests/zipf.cpp.s
 
+trees/evenScheme.o: trees/evenScheme.cpp.o
+
+.PHONY : trees/evenScheme.o
+
+# target to build an object file
+trees/evenScheme.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/evenScheme.cpp.o
+.PHONY : trees/evenScheme.cpp.o
+
+trees/evenScheme.i: trees/evenScheme.cpp.i
+
+.PHONY : trees/evenScheme.i
+
+# target to preprocess a source file
+trees/evenScheme.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/evenScheme.cpp.i
+.PHONY : trees/evenScheme.cpp.i
+
+trees/evenScheme.s: trees/evenScheme.cpp.s
+
+.PHONY : trees/evenScheme.s
+
+# target to generate assembly for a file
+trees/evenScheme.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/evenScheme.cpp.s
+.PHONY : trees/evenScheme.cpp.s
+
 trees/kRotScheme.o: trees/kRotScheme.cpp.o
 
 .PHONY : trees/kRotScheme.o
@@ -521,6 +548,9 @@ help:
 	@echo "... tests/zipf.o"
 	@echo "... tests/zipf.i"
 	@echo "... tests/zipf.s"
+	@echo "... trees/evenScheme.o"
+	@echo "... trees/evenScheme.i"
+	@echo "... trees/evenScheme.s"
 	@echo "... trees/kRotScheme.o"
 	@echo "... trees/kRotScheme.i"
 	@echo "... trees/kRotScheme.s"

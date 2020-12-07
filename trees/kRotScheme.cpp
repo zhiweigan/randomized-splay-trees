@@ -257,7 +257,7 @@ void FourRotSplayTree::AccessSplay(s* x)
                             L_Rotate(x->parent);
                             R_Rotate(x->parent);
                             L_Rotate(x->parent->parent);
-                            L_Rotate(x->parent->parent);
+                            L_Rotate(x->parent);
                         }
                     }
                 } else {

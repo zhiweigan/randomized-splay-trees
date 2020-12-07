@@ -31,6 +31,9 @@ CMakeFiles/randomized_splay_trees.dir/tests/zipf.cpp.o
  /Users/zhiweigan/Documents/randomized-splay-trees/tests/tests.h
  /Users/zhiweigan/Documents/randomized-splay-trees/tests/zipf.cpp
  /Users/zhiweigan/Documents/randomized-splay-trees/trees/trees.h
+CMakeFiles/randomized_splay_trees.dir/trees/evenScheme.cpp.o
+ /Users/zhiweigan/Documents/randomized-splay-trees/trees/evenScheme.cpp
+ /Users/zhiweigan/Documents/randomized-splay-trees/trees/trees.h
 CMakeFiles/randomized_splay_trees.dir/trees/kRotScheme.cpp.o
  /Users/zhiweigan/Documents/randomized-splay-trees/trees/kRotScheme.cpp
  /Users/zhiweigan/Documents/randomized-splay-trees/trees/trees.h

@@ -101,6 +101,9 @@
 		<Unit filename="/Users/zhiweigan/Documents/randomized-splay-trees/tests/zipf.cpp">
 			<Option target="randomized_splay_trees"/>
 		</Unit>
+		<Unit filename="/Users/zhiweigan/Documents/randomized-splay-trees/trees/evenScheme.cpp">
+			<Option target="randomized_splay_trees"/>
+		</Unit>
 		<Unit filename="/Users/zhiweigan/Documents/randomized-splay-trees/trees/kRotScheme.cpp">
 			<Option target="randomized_splay_trees"/>
 		</Unit>

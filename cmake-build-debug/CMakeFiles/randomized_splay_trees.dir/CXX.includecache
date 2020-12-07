@@ -6,14 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/Users/zhiweigan/Documents/randomized-splay-trees/main.cpp
-iostream
--
-tests/tests.h
-/Users/zhiweigan/Documents/randomized-splay-trees/tests/tests.h
-trees/trees.h
-/Users/zhiweigan/Documents/randomized-splay-trees/trees/trees.h
-
 /Users/zhiweigan/Documents/randomized-splay-trees/tests/VariadicTable.h
 iostream
 -
@@ -32,19 +24,7 @@ cassert
 cmath
 -
 
-/Users/zhiweigan/Documents/randomized-splay-trees/tests/justone.cpp
-tests.h
-/Users/zhiweigan/Documents/randomized-splay-trees/tests/tests.h
-
 /Users/zhiweigan/Documents/randomized-splay-trees/tests/random.cpp
-tests.h
-/Users/zhiweigan/Documents/randomized-splay-trees/tests/tests.h
-
-/Users/zhiweigan/Documents/randomized-splay-trees/tests/splayline.cpp
-tests.h
-/Users/zhiweigan/Documents/randomized-splay-trees/tests/tests.h
-
-/Users/zhiweigan/Documents/randomized-splay-trees/tests/tester.cpp
 tests.h
 /Users/zhiweigan/Documents/randomized-splay-trees/tests/tests.h
 
@@ -64,34 +44,6 @@ random
 VariadicTable.h
 /Users/zhiweigan/Documents/randomized-splay-trees/tests/VariadicTable.h
 
-/Users/zhiweigan/Documents/randomized-splay-trees/tests/zipf.cpp
-tests.h
-/Users/zhiweigan/Documents/randomized-splay-trees/tests/tests.h
-
-/Users/zhiweigan/Documents/randomized-splay-trees/trees/kRotScheme.cpp
-trees.h
-/Users/zhiweigan/Documents/randomized-splay-trees/trees/trees.h
-
-/Users/zhiweigan/Documents/randomized-splay-trees/trees/probabilisticKRot.cpp
-trees.h
-/Users/zhiweigan/Documents/randomized-splay-trees/trees/trees.h
-
-/Users/zhiweigan/Documents/randomized-splay-trees/trees/regularBST.cpp
-trees.h
-/Users/zhiweigan/Documents/randomized-splay-trees/trees/trees.h
-
-/Users/zhiweigan/Documents/randomized-splay-trees/trees/scheme1.cpp
-trees.h
-/Users/zhiweigan/Documents/randomized-splay-trees/trees/trees.h
-
-/Users/zhiweigan/Documents/randomized-splay-trees/trees/scheme2.cpp
-trees.h
-/Users/zhiweigan/Documents/randomized-splay-trees/trees/trees.h
-
-/Users/zhiweigan/Documents/randomized-splay-trees/trees/template.cpp
-trees.h
-/Users/zhiweigan/Documents/randomized-splay-trees/trees/trees.h
-
 /Users/zhiweigan/Documents/randomized-splay-trees/trees/trees.h
 iostream
 -
@@ -105,8 +57,4 @@ algorithm
 -
 queue
 -
-
-/Users/zhiweigan/Documents/randomized-splay-trees/trees/vanilla.cpp
-trees.h
-/Users/zhiweigan/Documents/randomized-splay-trees/trees/trees.h
 

@@ -29,7 +29,7 @@ void SplayLineTest::Access(int n, SplayTree* tree) { // Inserts n items between 
 }
 
 void SplayLineTest::RunOnTrees(map<string, SplayTree*>* trees) {
-    int trials[3] = {100, 10000, 100000};
+    int trials[4] = {100, 10000, 100000, 1000000};
 
     cout<<"Testing SplayLineTest"<<endl;
     VariadicTable<string, string, string> vt({"Tree Type",
