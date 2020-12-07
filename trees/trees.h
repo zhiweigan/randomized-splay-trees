@@ -84,6 +84,19 @@ public:
     s* Search(int key);
 };
 
+class Scheme3SplayTree : public SplayTree
+{
+private:
+    void AccessSplay(s* x);
+    default_random_engine generator;
+    uniform_int_distribution<int> choice;
+public:
+    Scheme3SplayTree(int p = 1 << 1) : SplayTree() {
+        choice = uniform_int_distribution<int>(0,p);
+    }
+    s* Search(int key);
+};
+
 class ThreeRotSplayTree : public SplayTree
 {
 protected:
