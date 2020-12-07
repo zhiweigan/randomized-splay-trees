@@ -6,12 +6,12 @@
 Tester::Tester(){
     // Trees
     SplayTree* vanillaT = new SplayTree();
-    HalfSplayTree* halfT = new HalfSplayTree();
+    Scheme1SplayTree* halfT = new Scheme1SplayTree();
 //    TemplateSplayTree* templateT = new TemplateSplayTree();
 
     trees = new map<string, SplayTree*>();
     trees->insert(make_pair("0: Vanilla", vanillaT)); // We need a name as well as the tree pointer
-    trees->insert(make_pair("1: Half Splay", halfT));
+    trees->insert(make_pair("1: Scheme 1, p = 2^10", halfT));
 //    trees->insert(make_pair("1: Template", templateT));
 
     // Tests

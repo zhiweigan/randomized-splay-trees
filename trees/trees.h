@@ -9,45 +9,49 @@
 #include <cstdio>
 #include <cstdlib>
 #include <random>
+#include <algorithm>
+
+using namespace std;
 
 struct s
 {
-    int k;
-    s* lch;
-    s* rch;
-};
-
-struct sComp : s
-{
-    double weight;
+    int key;
+    s* left;
+    s* right;
+    s* parent;
+    s(const int& init = int()) : left(nullptr), right(nullptr), parent(nullptr), key(init) {}
+    ~s() {}
 };
 
 class SplayTree
 {
 protected:
-    virtual s* RR_Rotate(s* k2);
-    virtual s* LL_Rotate(s* k2);
-    virtual s* Splay(int key, s* root);
-    virtual s* New_Node(int key);
+    virtual void L_Rotate(s* k2);
+    virtual void R_Rotate(s* k2);
+    virtual void Splay(s* x);
+    s* subtree_minimum(s *u);
+    s* subtree_maximum(s *u);
+    void replace(s *u, s *v);
+    unsigned long p_size;
 public:
-    virtual s* Insert(int key, s* root);
-    virtual s* Delete(int key, s* root);
-    virtual s* Search(int key, s* root);
-    void InOrder(s* root);
-    void Clear(s* root);
+    SplayTree() : root(nullptr), p_size(0) { }
+    virtual void Insert(int key);
+    virtual void Delete(int key);
+    virtual s* Search(int key);
+    s* root;
 };
 
-class HalfSplayTree : public SplayTree
+class Scheme1SplayTree : public SplayTree
 {
 private:
-//    s* RR_Rotate(s* k2);
-//    s* LL_Rotate(s* k2);
-    s* Splay(int key, s* root);
-//    s* New_Node(int key);
-//public:
-//    s* Insert(int key, s* root);
-//    s* Delete(int key, s* root);
-//    s* Search(int key, s* root);
+    void AccessSplay(s* x);
+    default_random_engine generator;
+    uniform_int_distribution<int> choice;
+public:
+    Scheme1SplayTree(int p = 1 << 10) : SplayTree() {
+        choice = uniform_int_distribution<int>(0,p);
+    }
+    s* Search(int key);
 };
 
 // Uncomment ONLY the ones you want to implement

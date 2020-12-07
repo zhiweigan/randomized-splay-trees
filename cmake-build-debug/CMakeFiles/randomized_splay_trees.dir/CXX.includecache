@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/zhiweigan/Documents/randomized-splay-trees/trees/halfsplay.cpp
+/Users/zhiweigan/Documents/randomized-splay-trees/trees/scheme1.cpp
 trees.h
 /Users/zhiweigan/Documents/randomized-splay-trees/trees/trees.h
 
@@ -18,5 +18,7 @@ cstdio
 cstdlib
 -
 random
+-
+algorithm
 -
 

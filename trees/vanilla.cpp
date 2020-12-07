@@ -6,175 +6,133 @@
 #include "trees.h"
 using namespace std;
 
-s* SplayTree::RR_Rotate(s* k2)
+void SplayTree::L_Rotate(s* x)
 {
-    s* k1 = k2->lch;
-    k2->lch = k1->rch;
-    k1->rch = k2;
-    return k1;
+    s *y = x->right;
+    if (y) {
+        x->right = y->left;
+        if (y->left) y->left->parent = x;
+        y->parent = x->parent;
+    }
+
+    if (!x->parent) root = y;
+    else if (x == x->parent->left) x->parent->left = y;
+    else x->parent->right = y;
+    if (y) y->left = x;
+    x->parent = y;
 }
 
-s* SplayTree::LL_Rotate(s* k2)
+void SplayTree::R_Rotate(s* x)
 {
-    s* k1 = k2->rch;
-    k2->rch = k1->lch;
-    k1->lch = k2;
-    return k1;
+    s *y = x->left;
+    if (y) {
+        x->left = y->right;
+        if (y->right) y->right->parent = x;
+        y->parent = x->parent;
+    }
+    if (!x->parent) root = y;
+    else if (x == x->parent->left) x->parent->left = y;
+    else x->parent->right = y;
+    if (y) y->right = x;
+    x->parent = y;
 }
 
-s* SplayTree::Splay(int key, s* root)
+void SplayTree::Splay(s *x)
 {
-    if (!root)
-        return NULL;
-    s header;
-    header.lch= header.rch = NULL;
-    s* LeftTreeMax = &header;
-    s* RightTreeMin = &header;
-    while (1)
-    {
-        if (key < root->k)
-        {
-            if (!root->lch)
-                break;
-            if (key< root->lch->k)
-            {
-                root = RR_Rotate(root);
-                if (!root->lch)
-                    break;
-            }
-            RightTreeMin->lch= root;
-            RightTreeMin = RightTreeMin->lch;
-            root = root->lch;
-            RightTreeMin->lch = NULL;
+    while (x->parent) {
+        if (!x->parent->parent) {
+            if (x->parent->left == x) R_Rotate(x->parent);
+            else L_Rotate(x->parent);
+        } else if (x->parent->left == x && x->parent->parent->left == x->parent) {
+            R_Rotate(x->parent->parent);
+            R_Rotate(x->parent);
+        } else if (x->parent->right == x && x->parent->parent->right == x->parent) {
+            L_Rotate(x->parent->parent);
+            L_Rotate(x->parent);
+        } else if (x->parent->left == x && x->parent->parent->right == x->parent) {
+            R_Rotate(x->parent);
+            L_Rotate(x->parent);
+        } else {
+            L_Rotate(x->parent);
+            R_Rotate(x->parent);
         }
-        else if (key> root->k)
-        {
-            if (!root->rch)
-                break;
-            if (key > root->rch->k)
-            {
-                root = LL_Rotate(root);
-                if (!root->rch)
-                    break;
-            }
-            LeftTreeMax->rch= root;
-            LeftTreeMax = LeftTreeMax->rch;
-            root = root->rch;
-            LeftTreeMax->rch = NULL;
+    }
+}
+
+s* SplayTree::subtree_minimum(s *u) {
+    while (u->left) u = u->left;
+    return u;
+}
+
+s* SplayTree::subtree_maximum(s *u) {
+    while (u->right) u = u->right;
+    return u;
+}
+
+void SplayTree::Insert(int key)
+{
+    s *z = root;
+    s *p = nullptr;
+
+    while (z) {
+        p = z;
+        if (z->key < key) z = z->right;
+        else z = z->left;
+    }
+
+    z = new s(key);
+    z->parent = p;
+
+    if (!p) root = z;
+    else if (p->key < z->key) p->right = z;
+    else p->left = z;
+
+    this->Splay(z);
+    p_size++;
+}
+
+void SplayTree::replace(s *u, s *v) {
+    if (!u->parent) root = v;
+    else if (u == u->parent->left) u->parent->left = v;
+    else u->parent->right = v;
+    if (v) v->parent = u->parent;
+}
+
+void SplayTree::Delete(int key)//delete node
+{
+    s *z = this->Search(key);
+    if (!z) return;
+
+    this->Splay(z);
+
+    if (!z->left) this->replace(z, z->right);
+    else if (!z->right) this->replace(z, z->left);
+    else {
+        s *y = subtree_minimum(z->right);
+        if (y->parent != z) {
+            this->replace(y, y->right);
+            y->right = z->right;
+            y->right->parent = y;
         }
-        else
-            break;
+        this->replace(z, y);
+        y->left = z->left;
+        y->left->parent = y;
     }
-    LeftTreeMax->rch = root->lch;
-    RightTreeMin->lch = root->rch;
-    root->lch = header.rch;
-    root->rch = header.lch;
-    return root;
+
+    delete z;
+    p_size--;
 }
 
-s* SplayTree::New_Node(int key)
+s* SplayTree::Search(int key) //searching
 {
-    s* p_node = new s;
-    if (!p_node)
-    {
-        fprintf(stderr, "Out of memory!\n");
-        exit(1);
-    }
-    p_node->k = key;
-    p_node->lch = p_node->rch = NULL;
-    return p_node;
-}
-
-s* SplayTree::Insert(int key, s* root)
-{
-    static s* p_node = NULL;
-    if (!p_node)
-        p_node = New_Node(key);
-    else
-        p_node->k = key;
-    if (!root)
-    {
-        root = p_node;
-        p_node = NULL;
-        return root;
-    }
-    root = Splay(key, root);
-    if (key < root->k)
-    {
-        p_node->lch= root->lch;
-        p_node->rch = root;
-        root->lch = NULL;
-        root = p_node;
-    }
-    else if (key > root->k)
-    {
-        p_node->rch = root->rch;
-        p_node->lch = root;
-        root->rch = NULL;
-        root = p_node;
-    }
-    else
-        return root;
-    p_node = NULL;
-    return root;
-}
-
-s* SplayTree::Delete(int key, s* root)//delete node
-{
-    s* temp;
-    if (!root)//if tree is empty
-        return NULL;
-    root = Splay(key, root);
-    if (key != root->k)//if tree has one item
-        return root;
-    else
-    {
-        if (!root->lch)
-        {
-            temp = root;
-            root = root->rch;
+    s *z = root;
+    while (z) {
+        if (z->key < key) z = z->right;
+        else if (key < z->key) z = z->left;
+        else {
+            this->Splay(z);
+            return z;
         }
-        else
-        {
-            temp = root;
-            root = Splay(key, root->lch);
-            root->rch = temp->rch;
-        }
-        free(temp);
-        return root;
     }
-}
-
-s* SplayTree::Search(int key, s* root) //searching
-{
-    return Splay(key, root);
-}
-
-void SplayTree::InOrder(s* root) //inorder traversal
-{
-    if (root)
-    {
-        InOrder(root->lch);
-        cout<< "key: " <<root->k;
-        if(root->lch)
-            cout<< " | left child: "<< root->lch->k;
-        if(root->rch)
-            cout << " | right child: " << root->rch->k;
-        cout<< "\n";
-        InOrder(root->rch);
-    }
-}
-
-void SplayTree::Clear(s* root)
-{
-    if (!root) return;
-
-    if (root->lch != nullptr) {
-        this->Clear(root->lch);
-    }
-    if (root->rch != nullptr) {
-        this->Clear(root->rch);
-    }
-
-    delete root;
+    return nullptr;
 }

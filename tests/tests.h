@@ -24,29 +24,21 @@ public:
 class RandomTest : public Test{
 public:
     void RunOnTrees(map<string, SplayTree*>* trees); // Every test must have a RunOnTrees function
-private:
-    static void Insert(int n, SplayTree* tree); // Tests
-    static void Mixed(int n, SplayTree* tree);
+protected:
+    void Insert(int n, SplayTree* tree); // Tests
+    void Delete(int n, SplayTree* tree);
+    void Access(int n, SplayTree* tree);
 };
 
 // Implement function headers here
-class ZipfTest : public Test{
+class ZipfTest : public RandomTest{
 public:
     void RunOnTrees(map<string, SplayTree*>* trees); // Every test must have a RunOnTrees function
     static vector<double> MakeDist(int n, double zipfS);
 private:
-    static void Insert(int n, SplayTree* tree, vector<double>* dist); // Tests
-    static void Mixed(int n, SplayTree* tree, vector<double>* dist);
+    void Access(int n, SplayTree* tree, vector<double>* dist);
 };
 
-// Implement function headers here
-class HuffmanCoding : public Test{
-public:
-    void RunOnTrees(map<string, SplayTree*>* trees); // Every test must have a RunOnTrees function
-private:
-    static void Insert(int n, SplayTree* tree); // Tests
-    static void Mixed(int n, SplayTree* tree);
-};
 
 class Tester { // Main testing class
 public:

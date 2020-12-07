@@ -155,31 +155,18 @@ CMakeFiles/randomized_splay_trees.dir/tests/zipf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/randomized_splay_trees.dir/tests/zipf.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhiweigan/Documents/randomized-splay-trees/tests/zipf.cpp -o CMakeFiles/randomized_splay_trees.dir/tests/zipf.cpp.s
 
-CMakeFiles/randomized_splay_trees.dir/tests/compression.cpp.o: CMakeFiles/randomized_splay_trees.dir/flags.make
-CMakeFiles/randomized_splay_trees.dir/tests/compression.cpp.o: ../tests/compression.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zhiweigan/Documents/randomized-splay-trees/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/randomized_splay_trees.dir/tests/compression.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/randomized_splay_trees.dir/tests/compression.cpp.o -c /Users/zhiweigan/Documents/randomized-splay-trees/tests/compression.cpp
+CMakeFiles/randomized_splay_trees.dir/trees/scheme1.cpp.o: CMakeFiles/randomized_splay_trees.dir/flags.make
+CMakeFiles/randomized_splay_trees.dir/trees/scheme1.cpp.o: ../trees/scheme1.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zhiweigan/Documents/randomized-splay-trees/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/randomized_splay_trees.dir/trees/scheme1.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/randomized_splay_trees.dir/trees/scheme1.cpp.o -c /Users/zhiweigan/Documents/randomized-splay-trees/trees/scheme1.cpp
 
-CMakeFiles/randomized_splay_trees.dir/tests/compression.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/randomized_splay_trees.dir/tests/compression.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zhiweigan/Documents/randomized-splay-trees/tests/compression.cpp > CMakeFiles/randomized_splay_trees.dir/tests/compression.cpp.i
+CMakeFiles/randomized_splay_trees.dir/trees/scheme1.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/randomized_splay_trees.dir/trees/scheme1.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zhiweigan/Documents/randomized-splay-trees/trees/scheme1.cpp > CMakeFiles/randomized_splay_trees.dir/trees/scheme1.cpp.i
 
-CMakeFiles/randomized_splay_trees.dir/tests/compression.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/randomized_splay_trees.dir/tests/compression.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhiweigan/Documents/randomized-splay-trees/tests/compression.cpp -o CMakeFiles/randomized_splay_trees.dir/tests/compression.cpp.s
-
-CMakeFiles/randomized_splay_trees.dir/trees/halfsplay.cpp.o: CMakeFiles/randomized_splay_trees.dir/flags.make
-CMakeFiles/randomized_splay_trees.dir/trees/halfsplay.cpp.o: ../trees/halfsplay.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zhiweigan/Documents/randomized-splay-trees/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/randomized_splay_trees.dir/trees/halfsplay.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/randomized_splay_trees.dir/trees/halfsplay.cpp.o -c /Users/zhiweigan/Documents/randomized-splay-trees/trees/halfsplay.cpp
-
-CMakeFiles/randomized_splay_trees.dir/trees/halfsplay.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/randomized_splay_trees.dir/trees/halfsplay.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zhiweigan/Documents/randomized-splay-trees/trees/halfsplay.cpp > CMakeFiles/randomized_splay_trees.dir/trees/halfsplay.cpp.i
-
-CMakeFiles/randomized_splay_trees.dir/trees/halfsplay.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/randomized_splay_trees.dir/trees/halfsplay.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhiweigan/Documents/randomized-splay-trees/trees/halfsplay.cpp -o CMakeFiles/randomized_splay_trees.dir/trees/halfsplay.cpp.s
+CMakeFiles/randomized_splay_trees.dir/trees/scheme1.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/randomized_splay_trees.dir/trees/scheme1.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhiweigan/Documents/randomized-splay-trees/trees/scheme1.cpp -o CMakeFiles/randomized_splay_trees.dir/trees/scheme1.cpp.s
 
 # Object files for target randomized_splay_trees
 randomized_splay_trees_OBJECTS = \
@@ -189,8 +176,7 @@ randomized_splay_trees_OBJECTS = \
 "CMakeFiles/randomized_splay_trees.dir/tests/random.cpp.o" \
 "CMakeFiles/randomized_splay_trees.dir/tests/tester.cpp.o" \
 "CMakeFiles/randomized_splay_trees.dir/tests/zipf.cpp.o" \
-"CMakeFiles/randomized_splay_trees.dir/tests/compression.cpp.o" \
-"CMakeFiles/randomized_splay_trees.dir/trees/halfsplay.cpp.o"
+"CMakeFiles/randomized_splay_trees.dir/trees/scheme1.cpp.o"
 
 # External object files for target randomized_splay_trees
 randomized_splay_trees_EXTERNAL_OBJECTS =
@@ -201,11 +187,10 @@ randomized_splay_trees: CMakeFiles/randomized_splay_trees.dir/trees/template.cpp
 randomized_splay_trees: CMakeFiles/randomized_splay_trees.dir/tests/random.cpp.o
 randomized_splay_trees: CMakeFiles/randomized_splay_trees.dir/tests/tester.cpp.o
 randomized_splay_trees: CMakeFiles/randomized_splay_trees.dir/tests/zipf.cpp.o
-randomized_splay_trees: CMakeFiles/randomized_splay_trees.dir/tests/compression.cpp.o
-randomized_splay_trees: CMakeFiles/randomized_splay_trees.dir/trees/halfsplay.cpp.o
+randomized_splay_trees: CMakeFiles/randomized_splay_trees.dir/trees/scheme1.cpp.o
 randomized_splay_trees: CMakeFiles/randomized_splay_trees.dir/build.make
 randomized_splay_trees: CMakeFiles/randomized_splay_trees.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/zhiweigan/Documents/randomized-splay-trees/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable randomized_splay_trees"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/zhiweigan/Documents/randomized-splay-trees/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable randomized_splay_trees"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/randomized_splay_trees.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

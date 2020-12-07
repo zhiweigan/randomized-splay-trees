@@ -1,12 +1,23 @@
 //
+// Created by Zhi Wei Gan on 12/7/20.
+//
+
+//
 // Created by Zhi Wei Gan on 11/25/20.
 //
-// Got from https://www.tutorialspoint.com/cplusplus-program-to-implement-splay-tree
 
 #include "trees.h"
+
 using namespace std;
 
-//void TemplateSplayTree::L_Rotate(s* x)
+// To add a new tree, copy the contents of this file to another file and implement ONLY the functions we need to change.
+// We let polymorphism take care of the rest.
+
+//======================================================================================================================
+//
+//using namespace std;
+//
+//void Scheme1SplayTree::L_Rotate(s* x)
 //{
 //    s *y = x->right;
 //    if (y) {
@@ -22,7 +33,7 @@ using namespace std;
 //    x->parent = y;
 //}
 //
-//void TemplateSplayTree::R_Rotate(s* x)
+//void Scheme1SplayTree::R_Rotate(s* x)
 //{
 //    s *y = x->left;
 //    if (y) {
@@ -37,9 +48,11 @@ using namespace std;
 //    x->parent = y;
 //}
 //
-//void TemplateSplayTree::Splay(s *x)
+//void Scheme1SplayTree::Splay(s *x)
 //{
 //    while (x->parent) {
+//        int action = this->choice(this->generator);
+//
 //        if (!x->parent->parent) {
 //            if (x->parent->left == x) R_Rotate(x->parent);
 //            else L_Rotate(x->parent);
@@ -56,20 +69,45 @@ using namespace std;
 //            L_Rotate(x->parent);
 //            R_Rotate(x->parent);
 //        }
+//
 //    }
 //}
+
+void Scheme1SplayTree::AccessSplay(s *x)
+{
+    while (x->parent) {
+
+        if (!x->parent->parent) {
+            if (x->parent->left == x) R_Rotate(x->parent);
+            else L_Rotate(x->parent);
+        } else if (x->parent->left == x && x->parent->parent->left == x->parent) {
+            R_Rotate(x->parent->parent);
+            R_Rotate(x->parent);
+        } else if (x->parent->right == x && x->parent->parent->right == x->parent) {
+            L_Rotate(x->parent->parent);
+            L_Rotate(x->parent);
+        } else if (x->parent->left == x && x->parent->parent->right == x->parent) {
+            R_Rotate(x->parent);
+            L_Rotate(x->parent);
+        } else {
+            L_Rotate(x->parent);
+            R_Rotate(x->parent);
+        }
+
+    }
+}
 //
-//s* TemplateSplayTree::subtree_minimum(s *u) {
+//s* Scheme1SplayTree::subtree_minimum(s *u) {
 //    while (u->left) u = u->left;
 //    return u;
 //}
 //
-//s* TemplateSplayTree::subtree_maximum(s *u) {
+//s* Scheme1SplayTree::subtree_maximum(s *u) {
 //    while (u->right) u = u->right;
 //    return u;
 //}
 //
-//void TemplateSplayTree::Insert(int key)
+//void Scheme1SplayTree::Insert(int key)
 //{
 //    s *z = root;
 //    s *p = nullptr;
@@ -91,14 +129,14 @@ using namespace std;
 //    p_size++;
 //}
 //
-//void TemplateSplayTree::replace(s *u, s *v) {
+//void Scheme1SplayTree::replace(s *u, s *v) {
 //    if (!u->parent) root = v;
 //    else if (u == u->parent->left) u->parent->left = v;
 //    else u->parent->right = v;
 //    if (v) v->parent = u->parent;
 //}
 //
-//void TemplateSplayTree::Delete(int key)//delete node
+//void Scheme1SplayTree::Delete(int key)//delete node
 //{
 //    s *z = this->Search(key);
 //    if (!z) return;
@@ -123,29 +161,17 @@ using namespace std;
 //    p_size--;
 //}
 //
-//s* TemplateSplayTree::Search(int key) //searching
-//{
-//    s *z = root;
-//    while (z) {
-//        if (z->key < key){
-//            if (z->right == nullptr){
-//                this->Splay(z);
-//                return root;
-//            }
-//            else z = z->right;
-//        }
-//        else if (key < z->key){
-//            if (z->left == nullptr){
-//                this->Splay(z);
-//                return root;
-//            }
-//            else z = z->left;
-//        }
-//        else {
-//            this->Splay(z);
-//            return root;
-//        }
-//    }
-//    return nullptr;
-//}
-//
+s* Scheme1SplayTree::Search(int key) //searching
+{
+    s *z = root;
+    while (z) {
+        if (z->key < key) z = z->right;
+        else if (key < z->key) z = z->left;
+        else {
+            int action = this->choice(this->generator);
+            if (action == 0) this->AccessSplay(z);
+            return z;
+        }
+    }
+    return nullptr;
+}

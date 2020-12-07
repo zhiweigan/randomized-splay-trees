@@ -1,10 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/randomized_splay_trees.dir/main.cpp.o"
-  "CMakeFiles/randomized_splay_trees.dir/tests/compression.cpp.o"
   "CMakeFiles/randomized_splay_trees.dir/tests/random.cpp.o"
   "CMakeFiles/randomized_splay_trees.dir/tests/tester.cpp.o"
   "CMakeFiles/randomized_splay_trees.dir/tests/zipf.cpp.o"
-  "CMakeFiles/randomized_splay_trees.dir/trees/halfsplay.cpp.o"
+  "CMakeFiles/randomized_splay_trees.dir/trees/scheme1.cpp.o"
   "CMakeFiles/randomized_splay_trees.dir/trees/template.cpp.o"
   "CMakeFiles/randomized_splay_trees.dir/trees/vanilla.cpp.o"
   "randomized_splay_trees"

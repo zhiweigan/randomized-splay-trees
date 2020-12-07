@@ -6,11 +6,6 @@ CMakeFiles/randomized_splay_trees.dir/main.cpp.o: ../tests/VariadicTable.h
 CMakeFiles/randomized_splay_trees.dir/main.cpp.o: ../tests/tests.h
 CMakeFiles/randomized_splay_trees.dir/main.cpp.o: ../trees/trees.h
 
-CMakeFiles/randomized_splay_trees.dir/tests/compression.cpp.o: ../tests/VariadicTable.h
-CMakeFiles/randomized_splay_trees.dir/tests/compression.cpp.o: ../tests/compression.cpp
-CMakeFiles/randomized_splay_trees.dir/tests/compression.cpp.o: ../tests/tests.h
-CMakeFiles/randomized_splay_trees.dir/tests/compression.cpp.o: ../trees/trees.h
-
 CMakeFiles/randomized_splay_trees.dir/tests/random.cpp.o: ../tests/VariadicTable.h
 CMakeFiles/randomized_splay_trees.dir/tests/random.cpp.o: ../tests/random.cpp
 CMakeFiles/randomized_splay_trees.dir/tests/random.cpp.o: ../tests/tests.h
@@ -26,8 +21,8 @@ CMakeFiles/randomized_splay_trees.dir/tests/zipf.cpp.o: ../tests/tests.h
 CMakeFiles/randomized_splay_trees.dir/tests/zipf.cpp.o: ../tests/zipf.cpp
 CMakeFiles/randomized_splay_trees.dir/tests/zipf.cpp.o: ../trees/trees.h
 
-CMakeFiles/randomized_splay_trees.dir/trees/halfsplay.cpp.o: ../trees/halfsplay.cpp
-CMakeFiles/randomized_splay_trees.dir/trees/halfsplay.cpp.o: ../trees/trees.h
+CMakeFiles/randomized_splay_trees.dir/trees/scheme1.cpp.o: ../trees/scheme1.cpp
+CMakeFiles/randomized_splay_trees.dir/trees/scheme1.cpp.o: ../trees/trees.h
 
 CMakeFiles/randomized_splay_trees.dir/trees/template.cpp.o: ../trees/template.cpp
 CMakeFiles/randomized_splay_trees.dir/trees/template.cpp.o: ../trees/trees.h
