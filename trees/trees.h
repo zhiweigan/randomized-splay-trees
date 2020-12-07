@@ -75,8 +75,20 @@ class ThreeRotSplayTree : public SplayTree
     private:
         void AccessSplay(s* x);
     public:
-    kRotSplayTree(int p = 1 << 10) : SplayTree() {
+    ThreeRotSplayTree(int p = 1 << 10) : SplayTree() {
         choice = uniform_int_distribution<int>(0, p);
     }
     s* Search(int key);
+}
+
+class OneRotSplayTree : public SplayTree
+{
+    private:
+        void AccessSplay(s* x);
+    public:
+    OneRotSplayTree(int p = 1 << 10) : SplayTree() {
+        choice = uniform_int_distribution<int>(0, p);
+    }
+    s* Search(int key);
+
 }
