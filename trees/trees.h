@@ -90,5 +90,15 @@ class OneRotSplayTree : public SplayTree
         choice = uniform_int_distribution<int>(0, p);
     }
     s* Search(int key);
+}
 
+class FourRotSplayTree : public SplayTree
+{
+    private:
+        void AccessSplay(s* x);
+    public:
+    FourRotSplayTree(int p = 1 << 10) : SplayTree() {
+        choice = uniform_int_distribution<int>(0, p);
+    }
+    s* Search(int key);
 }
