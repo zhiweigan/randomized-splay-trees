@@ -69,3 +69,14 @@ class TemplateSplayTree : public SplayTree
 };
 
 #endif //RANDOMIZED_SPLAY_TREES_TREES_H
+
+class ThreeRotSplayTree : public SplayTree
+{
+    private:
+        void AccessSplay(s* x);
+    public:
+    kRotSplayTree(int p = 1 << 10) : SplayTree() {
+        choice = uniform_int_distribution<int>(0, p);
+    }
+    s* Search(int key);
+}
