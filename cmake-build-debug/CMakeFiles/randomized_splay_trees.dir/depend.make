@@ -16,6 +16,11 @@ CMakeFiles/randomized_splay_trees.dir/tests/random.cpp.o: ../tests/random.cpp
 CMakeFiles/randomized_splay_trees.dir/tests/random.cpp.o: ../tests/tests.h
 CMakeFiles/randomized_splay_trees.dir/tests/random.cpp.o: ../trees/trees.h
 
+CMakeFiles/randomized_splay_trees.dir/tests/splayline.cpp.o: ../tests/VariadicTable.h
+CMakeFiles/randomized_splay_trees.dir/tests/splayline.cpp.o: ../tests/splayline.cpp
+CMakeFiles/randomized_splay_trees.dir/tests/splayline.cpp.o: ../tests/tests.h
+CMakeFiles/randomized_splay_trees.dir/tests/splayline.cpp.o: ../trees/trees.h
+
 CMakeFiles/randomized_splay_trees.dir/tests/tester.cpp.o: ../tests/VariadicTable.h
 CMakeFiles/randomized_splay_trees.dir/tests/tester.cpp.o: ../tests/tester.cpp
 CMakeFiles/randomized_splay_trees.dir/tests/tester.cpp.o: ../tests/tests.h
@@ -37,6 +42,9 @@ CMakeFiles/randomized_splay_trees.dir/trees/scheme2.cpp.o: ../trees/trees.h
 
 CMakeFiles/randomized_splay_trees.dir/trees/template.cpp.o: ../trees/template.cpp
 CMakeFiles/randomized_splay_trees.dir/trees/template.cpp.o: ../trees/trees.h
+
+CMakeFiles/randomized_splay_trees.dir/trees/threeRotScheme.cpp.o: ../trees/threeRotScheme.cpp
+CMakeFiles/randomized_splay_trees.dir/trees/threeRotScheme.cpp.o: ../trees/trees.h
 
 CMakeFiles/randomized_splay_trees.dir/trees/vanilla.cpp.o: ../trees/trees.h
 CMakeFiles/randomized_splay_trees.dir/trees/vanilla.cpp.o: ../trees/vanilla.cpp

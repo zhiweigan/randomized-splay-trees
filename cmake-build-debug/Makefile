@@ -224,6 +224,33 @@ tests/random.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/tests/random.cpp.s
 .PHONY : tests/random.cpp.s
 
+tests/splayline.o: tests/splayline.cpp.o
+
+.PHONY : tests/splayline.o
+
+# target to build an object file
+tests/splayline.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/tests/splayline.cpp.o
+.PHONY : tests/splayline.cpp.o
+
+tests/splayline.i: tests/splayline.cpp.i
+
+.PHONY : tests/splayline.i
+
+# target to preprocess a source file
+tests/splayline.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/tests/splayline.cpp.i
+.PHONY : tests/splayline.cpp.i
+
+tests/splayline.s: tests/splayline.cpp.s
+
+.PHONY : tests/splayline.s
+
+# target to generate assembly for a file
+tests/splayline.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/tests/splayline.cpp.s
+.PHONY : tests/splayline.cpp.s
+
 tests/tester.o: tests/tester.cpp.o
 
 .PHONY : tests/tester.o
@@ -386,6 +413,33 @@ trees/template.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/template.cpp.s
 .PHONY : trees/template.cpp.s
 
+trees/threeRotScheme.o: trees/threeRotScheme.cpp.o
+
+.PHONY : trees/threeRotScheme.o
+
+# target to build an object file
+trees/threeRotScheme.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/threeRotScheme.cpp.o
+.PHONY : trees/threeRotScheme.cpp.o
+
+trees/threeRotScheme.i: trees/threeRotScheme.cpp.i
+
+.PHONY : trees/threeRotScheme.i
+
+# target to preprocess a source file
+trees/threeRotScheme.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/threeRotScheme.cpp.i
+.PHONY : trees/threeRotScheme.cpp.i
+
+trees/threeRotScheme.s: trees/threeRotScheme.cpp.s
+
+.PHONY : trees/threeRotScheme.s
+
+# target to generate assembly for a file
+trees/threeRotScheme.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/threeRotScheme.cpp.s
+.PHONY : trees/threeRotScheme.cpp.s
+
 trees/vanilla.o: trees/vanilla.cpp.o
 
 .PHONY : trees/vanilla.o
@@ -431,6 +485,9 @@ help:
 	@echo "... tests/random.o"
 	@echo "... tests/random.i"
 	@echo "... tests/random.s"
+	@echo "... tests/splayline.o"
+	@echo "... tests/splayline.i"
+	@echo "... tests/splayline.s"
 	@echo "... tests/tester.o"
 	@echo "... tests/tester.i"
 	@echo "... tests/tester.s"
@@ -449,6 +506,9 @@ help:
 	@echo "... trees/template.o"
 	@echo "... trees/template.i"
 	@echo "... trees/template.s"
+	@echo "... trees/threeRotScheme.o"
+	@echo "... trees/threeRotScheme.i"
+	@echo "... trees/threeRotScheme.s"
 	@echo "... trees/vanilla.o"
 	@echo "... trees/vanilla.i"
 	@echo "... trees/vanilla.s"

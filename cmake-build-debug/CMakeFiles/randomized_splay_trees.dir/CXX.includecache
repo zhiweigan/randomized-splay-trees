@@ -6,14 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/Users/zhiweigan/Documents/randomized-splay-trees/main.cpp
-iostream
--
-tests/tests.h
-/Users/zhiweigan/Documents/randomized-splay-trees/tests/tests.h
-trees/trees.h
-/Users/zhiweigan/Documents/randomized-splay-trees/trees/trees.h
-
 /Users/zhiweigan/Documents/randomized-splay-trees/tests/VariadicTable.h
 iostream
 -
@@ -32,7 +24,7 @@ cassert
 cmath
 -
 
-/Users/zhiweigan/Documents/randomized-splay-trees/tests/justone.cpp
+/Users/zhiweigan/Documents/randomized-splay-trees/tests/splayline.cpp
 tests.h
 /Users/zhiweigan/Documents/randomized-splay-trees/tests/tests.h
 

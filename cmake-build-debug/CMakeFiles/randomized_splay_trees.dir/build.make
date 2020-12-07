@@ -207,6 +207,32 @@ CMakeFiles/randomized_splay_trees.dir/tests/justone.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/randomized_splay_trees.dir/tests/justone.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhiweigan/Documents/randomized-splay-trees/tests/justone.cpp -o CMakeFiles/randomized_splay_trees.dir/tests/justone.cpp.s
 
+CMakeFiles/randomized_splay_trees.dir/trees/threeRotScheme.cpp.o: CMakeFiles/randomized_splay_trees.dir/flags.make
+CMakeFiles/randomized_splay_trees.dir/trees/threeRotScheme.cpp.o: ../trees/threeRotScheme.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zhiweigan/Documents/randomized-splay-trees/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/randomized_splay_trees.dir/trees/threeRotScheme.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/randomized_splay_trees.dir/trees/threeRotScheme.cpp.o -c /Users/zhiweigan/Documents/randomized-splay-trees/trees/threeRotScheme.cpp
+
+CMakeFiles/randomized_splay_trees.dir/trees/threeRotScheme.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/randomized_splay_trees.dir/trees/threeRotScheme.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zhiweigan/Documents/randomized-splay-trees/trees/threeRotScheme.cpp > CMakeFiles/randomized_splay_trees.dir/trees/threeRotScheme.cpp.i
+
+CMakeFiles/randomized_splay_trees.dir/trees/threeRotScheme.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/randomized_splay_trees.dir/trees/threeRotScheme.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhiweigan/Documents/randomized-splay-trees/trees/threeRotScheme.cpp -o CMakeFiles/randomized_splay_trees.dir/trees/threeRotScheme.cpp.s
+
+CMakeFiles/randomized_splay_trees.dir/tests/splayline.cpp.o: CMakeFiles/randomized_splay_trees.dir/flags.make
+CMakeFiles/randomized_splay_trees.dir/tests/splayline.cpp.o: ../tests/splayline.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zhiweigan/Documents/randomized-splay-trees/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/randomized_splay_trees.dir/tests/splayline.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/randomized_splay_trees.dir/tests/splayline.cpp.o -c /Users/zhiweigan/Documents/randomized-splay-trees/tests/splayline.cpp
+
+CMakeFiles/randomized_splay_trees.dir/tests/splayline.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/randomized_splay_trees.dir/tests/splayline.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zhiweigan/Documents/randomized-splay-trees/tests/splayline.cpp > CMakeFiles/randomized_splay_trees.dir/tests/splayline.cpp.i
+
+CMakeFiles/randomized_splay_trees.dir/tests/splayline.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/randomized_splay_trees.dir/tests/splayline.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhiweigan/Documents/randomized-splay-trees/tests/splayline.cpp -o CMakeFiles/randomized_splay_trees.dir/tests/splayline.cpp.s
+
 # Object files for target randomized_splay_trees
 randomized_splay_trees_OBJECTS = \
 "CMakeFiles/randomized_splay_trees.dir/main.cpp.o" \
@@ -218,7 +244,9 @@ randomized_splay_trees_OBJECTS = \
 "CMakeFiles/randomized_splay_trees.dir/trees/scheme1.cpp.o" \
 "CMakeFiles/randomized_splay_trees.dir/trees/scheme2.cpp.o" \
 "CMakeFiles/randomized_splay_trees.dir/trees/regularBST.cpp.o" \
-"CMakeFiles/randomized_splay_trees.dir/tests/justone.cpp.o"
+"CMakeFiles/randomized_splay_trees.dir/tests/justone.cpp.o" \
+"CMakeFiles/randomized_splay_trees.dir/trees/threeRotScheme.cpp.o" \
+"CMakeFiles/randomized_splay_trees.dir/tests/splayline.cpp.o"
 
 # External object files for target randomized_splay_trees
 randomized_splay_trees_EXTERNAL_OBJECTS =
@@ -233,9 +261,11 @@ randomized_splay_trees: CMakeFiles/randomized_splay_trees.dir/trees/scheme1.cpp.
 randomized_splay_trees: CMakeFiles/randomized_splay_trees.dir/trees/scheme2.cpp.o
 randomized_splay_trees: CMakeFiles/randomized_splay_trees.dir/trees/regularBST.cpp.o
 randomized_splay_trees: CMakeFiles/randomized_splay_trees.dir/tests/justone.cpp.o
+randomized_splay_trees: CMakeFiles/randomized_splay_trees.dir/trees/threeRotScheme.cpp.o
+randomized_splay_trees: CMakeFiles/randomized_splay_trees.dir/tests/splayline.cpp.o
 randomized_splay_trees: CMakeFiles/randomized_splay_trees.dir/build.make
 randomized_splay_trees: CMakeFiles/randomized_splay_trees.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/zhiweigan/Documents/randomized-splay-trees/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable randomized_splay_trees"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/zhiweigan/Documents/randomized-splay-trees/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable randomized_splay_trees"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/randomized_splay_trees.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

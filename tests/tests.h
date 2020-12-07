@@ -29,6 +29,15 @@ protected:
     void Access(int n, SplayTree* tree);
 };
 
+class SplayLineTest : public Test{
+public:
+    void RunOnTrees(map<string, SplayTree*>* trees); // Every test must have a RunOnTrees function
+protected:
+    void Insert(int n, SplayTree* tree); // Tests
+    void Delete(int n, SplayTree* tree);
+    void Access(int n, SplayTree* tree);
+};
+
 class RandomTest : public Test{
 public:
     void RunOnTrees(map<string, SplayTree*>* trees); // Every test must have a RunOnTrees function

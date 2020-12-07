@@ -9,6 +9,7 @@ Tester::Tester(){
     SplayTree* vanillaT = new SplayTree();
     Scheme1SplayTree* s1_10 = new Scheme1SplayTree();
     Scheme2SplayTree* s2_1 = new Scheme2SplayTree();
+    ThreeRotSplayTree* threeRot = new ThreeRotSplayTree();
 //    TemplateSplayTree* templateT = new TemplateSplayTree();
 
     trees = new map<string, SplayTree*>();
@@ -16,16 +17,19 @@ Tester::Tester(){
     trees->insert(make_pair("1: Vanilla", vanillaT));
     trees->insert(make_pair("2: Scheme 1, p = 2^-10", s1_10));
     trees->insert(make_pair("3: Scheme 2, p = 2^-1", s2_1));
+    trees->insert(make_pair("4: ThreeRot, p = 2^-1", threeRot));
 //    trees->insert(make_pair("1: Template", templateT));
 
     // Tests
     RandomTest* randomTest = new RandomTest();
     ZipfTest* zipfTest = new ZipfTest();
     OneTest* oneTest = new OneTest();
+    SplayLineTest* lineTest = new SplayLineTest();
     tests = new vector<Test*>();
     tests->push_back(randomTest);
     tests->push_back(zipfTest);
     tests->push_back(oneTest);
+    tests->push_back(lineTest);
 }
 
 //======================================================================================================================

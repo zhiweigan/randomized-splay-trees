@@ -18,8 +18,8 @@ int main() {
 //    ZipfTest test;
 //    vector<double> res = test.MakeDist(10, 1.07);
 
-    OneTest oneTest;
-    tester.runOneTestAllTrees(&oneTest);
+    SplayLineTest lineTest;
+    tester.runOneTestAllTrees(&lineTest);
 //
 //    tester.runOneTestOneTree(&tempTree, &randomTest, "tempTree");
 

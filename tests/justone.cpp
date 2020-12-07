@@ -37,9 +37,7 @@ void OneTest::RunOnTrees(map<string, SplayTree*>* trees) {
 
     for(pair<string, SplayTree*> tree : *trees){
         vt.addRow(tree.first, "", "", "", "");
-        cout<<tree.first<<endl;
         for(int trial : trials){
-            cout<<trial<<endl;
             int startInsert = clock();
             this->Insert(trial, tree.second);
 

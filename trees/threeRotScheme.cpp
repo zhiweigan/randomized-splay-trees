@@ -1,4 +1,4 @@
-#include "trees.n"
+#include "trees.h"
 
 using namespace std;
 
@@ -74,9 +74,9 @@ void ThreeRotSplayTree::AccessSplay(s* x)
     }
 }
 
-s* ThreeRotSplayTree::Search(int key) 
+s* ThreeRotSplayTree::Search(int key)
 {
-   s *z = root;
+    s *z = root;
     while (z) {
         if (z->key < key) z = z->right;
         else if (key < z->key) z = z->left;
@@ -87,7 +87,7 @@ s* ThreeRotSplayTree::Search(int key)
     }
     return nullptr;
 }
-
+/*
 void OneRotSplayTree::AccessSplay(s* x)
 {
     while (x->parent) {
@@ -108,4 +108,4 @@ s* OneRotSplayTree::Search(int key)
         }
     }
     return nullptr;
-}
+}*/

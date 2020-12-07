@@ -78,29 +78,13 @@ public:
     s* Search(int key);
 };
 
-// Uncomment ONLY the ones you want to implement
-class TemplateSplayTree : public SplayTree
+class ThreeRotSplayTree : public SplayTree
 {
-//private:
-//    s* RR_Rotate(s* k2);
-//    s* LL_Rotate(s* k2);
-//    s* Splay(int key, s* root);
-//    s* New_Node(int key);
-//public:
-//    s* Insert(int key, s* root);
-//    s* Delete(int key, s* root);
-//    s* Search(int key, s* root);
+private:
+    void AccessSplay(s* x);
+public:
+    ThreeRotSplayTree(int p = 1 << 1) : SplayTree() {}
+    s* Search(int key);
 };
 
 #endif //RANDOMIZED_SPLAY_TREES_TREES_H
-
-class ThreeRotSplayTree : public SplayTree
-{
-    private:
-        void AccessSplay(s* x);
-    public:
-    kRotSplayTree(int p = 1 << 10) : SplayTree() {
-        choice = uniform_int_distribution<int>(0, p);
-    }
-    s* Search(int key);
-}
