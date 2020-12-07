@@ -15,9 +15,11 @@ using namespace std;
 
 //======================================================================================================================
 
-void Scheme1SplayTree::AccessSplay(s *x)
+
+void Scheme2SplayTree::AccessSplay(s *x)
 {
     while (x->parent) {
+
         if (!x->parent->parent) {
             if (x->parent->left == x) R_Rotate(x->parent);
             else L_Rotate(x->parent);
@@ -38,7 +40,7 @@ void Scheme1SplayTree::AccessSplay(s *x)
     }
 }
 
-s* Scheme1SplayTree::Search(int key) //searching
+s* Scheme2SplayTree::Search(int key) //searching
 {
     s *z = root;
     while (z) {
@@ -47,6 +49,7 @@ s* Scheme1SplayTree::Search(int key) //searching
         else {
             int action = this->choice(this->generator);
             if (action == 0) this->AccessSplay(z);
+            else if (z->parent != nullptr) this->AccessSplay(z->parent);
             return z;
         }
     }

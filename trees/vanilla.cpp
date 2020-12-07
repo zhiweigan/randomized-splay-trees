@@ -69,6 +69,26 @@ s* SplayTree::subtree_maximum(s *u) {
     return u;
 }
 
+void SplayTree::printHelper(const std::string &prefix, const s *node, bool isLeft) {
+    if( node != nullptr )
+    {
+        std::cout << prefix;
+
+        std::cout << (isLeft ? "├──" : "└──" );
+
+        // print the value of the node
+        std::cout << node->key << std::endl;
+
+        // enter the next tree level - left and right branch
+        this->printHelper( prefix + (isLeft ? "│   " : "    "), node->left, true);
+        this->printHelper( prefix + (isLeft ? "│   " : "    "), node->right, false);
+    }
+}
+
+void SplayTree::prettyPrint(){
+    this->printHelper("", root, false);
+}
+
 void SplayTree::Insert(int key)
 {
     s *z = root;

@@ -5,21 +5,35 @@
 
 Tester::Tester(){
     // Trees
+    BST* bst = new BST();
     SplayTree* vanillaT = new SplayTree();
-    Scheme1SplayTree* halfT = new Scheme1SplayTree();
+    Scheme1SplayTree* s1_10 = new Scheme1SplayTree();
+    Scheme2SplayTree* s2_1 = new Scheme2SplayTree();
+    OneRotSplayTree* oneRot = new OneRotSplayTree();
+    ThreeRotSplayTree* threeRot = new ThreeRotSplayTree();
+    FourRotSplayTree* fourRot = new FourRotSplayTree();
 //    TemplateSplayTree* templateT = new TemplateSplayTree();
 
     trees = new map<string, SplayTree*>();
-    trees->insert(make_pair("0: Vanilla", vanillaT)); // We need a name as well as the tree pointer
-    trees->insert(make_pair("1: Scheme 1, p = 2^10", halfT));
+    //trees->insert(make_pair("0: BST", bst)); // We need a name as well as the tree pointer
+    trees->insert(make_pair("1: Vanilla", vanillaT));
+    trees->insert(make_pair("2: Scheme 1, p = 2^-10", s1_10));
+    trees->insert(make_pair("3: Scheme 2, p = 2^-1", s2_1));
+    trees->insert(make_pair("4: OneRot", oneRot));
+    trees->insert(make_pair("5: ThreeRot", threeRot));
+    trees->insert(make_pair("6: FourRot", fourRot));
 //    trees->insert(make_pair("1: Template", templateT));
 
     // Tests
     RandomTest* randomTest = new RandomTest();
     ZipfTest* zipfTest = new ZipfTest();
+    OneTest* oneTest = new OneTest();
+    SplayLineTest* lineTest = new SplayLineTest();
     tests = new vector<Test*>();
     tests->push_back(randomTest);
     tests->push_back(zipfTest);
+    tests->push_back(oneTest);
+    tests->push_back(lineTest);
 }
 
 //======================================================================================================================
