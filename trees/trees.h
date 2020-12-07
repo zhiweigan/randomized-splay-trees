@@ -81,15 +81,6 @@ public:
     s* Search(int key);
 };
 
-class EvenSplayTree : public SplayTree
-{
-    private:
-        void AccessSplay(s* x);
-    public:
-        ThreeRotSplayTree(int p = 1 << 1) : SplayTree() {}
-        s* Search(int key);
-};
-
 class ThreeRotSplayTree : public SplayTree
 {
 protected:
