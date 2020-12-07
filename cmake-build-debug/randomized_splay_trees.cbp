@@ -101,6 +101,12 @@
 		<Unit filename="/Users/zhiweigan/Documents/randomized-splay-trees/tests/zipf.cpp">
 			<Option target="randomized_splay_trees"/>
 		</Unit>
+		<Unit filename="/Users/zhiweigan/Documents/randomized-splay-trees/trees/kRotScheme.cpp">
+			<Option target="randomized_splay_trees"/>
+		</Unit>
+		<Unit filename="/Users/zhiweigan/Documents/randomized-splay-trees/trees/probabilisticKRot.cpp">
+			<Option target="randomized_splay_trees"/>
+		</Unit>
 		<Unit filename="/Users/zhiweigan/Documents/randomized-splay-trees/trees/regularBST.cpp">
 			<Option target="randomized_splay_trees"/>
 		</Unit>
@@ -111,9 +117,6 @@
 			<Option target="randomized_splay_trees"/>
 		</Unit>
 		<Unit filename="/Users/zhiweigan/Documents/randomized-splay-trees/trees/template.cpp">
-			<Option target="randomized_splay_trees"/>
-		</Unit>
-		<Unit filename="/Users/zhiweigan/Documents/randomized-splay-trees/trees/threeRotScheme.cpp">
 			<Option target="randomized_splay_trees"/>
 		</Unit>
 		<Unit filename="/Users/zhiweigan/Documents/randomized-splay-trees/trees/trees.h">

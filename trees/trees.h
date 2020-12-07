@@ -83,29 +83,61 @@ public:
 
 class ThreeRotSplayTree : public SplayTree
 {
-private:
+protected:
     void AccessSplay(s* x);
 public:
-    ThreeRotSplayTree(int p = 1 << 1) : SplayTree() {}
+    ThreeRotSplayTree() : SplayTree() {}
     s* Search(int key);
 };
 
+class randomThreeRotSplayTree : public ThreeRotSplayTree
+{
+    default_random_engine generator;
+    uniform_int_distribution<int> choice;
+public:
+    randomThreeRotSplayTree(int p = 1 << 1) : ThreeRotSplayTree() {
+        choice = uniform_int_distribution<int>(0,p);
+    }
+    s* Search(int key);
+};
 
 class OneRotSplayTree : public SplayTree
 {
-private:
+protected:
     void AccessSplay(s* x);
 public:
-    OneRotSplayTree(int p = 1 << 10) : SplayTree() {}
+    OneRotSplayTree() : SplayTree() {}
+    s* Search(int key);
+};
+
+class randomOneRotSplayTree : public OneRotSplayTree
+{
+    default_random_engine generator;
+    uniform_int_distribution<int> choice;
+public:
+    randomOneRotSplayTree(int p = 1 << 1) : OneRotSplayTree() {
+        choice = uniform_int_distribution<int>(0,p);
+    }
     s* Search(int key);
 };
 
 class FourRotSplayTree : public SplayTree
 {
-private:
+protected:
     void AccessSplay(s* x);
 public:
-    FourRotSplayTree(int p = 1 << 10) : SplayTree() {}
+    FourRotSplayTree() : SplayTree() {}
+    s* Search(int key);
+};
+
+class randomFourRotSplayTree : public FourRotSplayTree
+{
+    default_random_engine generator;
+    uniform_int_distribution<int> choice;
+public:
+    randomFourRotSplayTree(int p = 1 << 1) : FourRotSplayTree() {
+        choice = uniform_int_distribution<int>(0,p);
+    }
     s* Search(int key);
 };
 

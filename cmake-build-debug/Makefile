@@ -305,6 +305,60 @@ tests/zipf.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/tests/zipf.cpp.s
 .PHONY : tests/zipf.cpp.s
 
+trees/kRotScheme.o: trees/kRotScheme.cpp.o
+
+.PHONY : trees/kRotScheme.o
+
+# target to build an object file
+trees/kRotScheme.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/kRotScheme.cpp.o
+.PHONY : trees/kRotScheme.cpp.o
+
+trees/kRotScheme.i: trees/kRotScheme.cpp.i
+
+.PHONY : trees/kRotScheme.i
+
+# target to preprocess a source file
+trees/kRotScheme.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/kRotScheme.cpp.i
+.PHONY : trees/kRotScheme.cpp.i
+
+trees/kRotScheme.s: trees/kRotScheme.cpp.s
+
+.PHONY : trees/kRotScheme.s
+
+# target to generate assembly for a file
+trees/kRotScheme.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/kRotScheme.cpp.s
+.PHONY : trees/kRotScheme.cpp.s
+
+trees/probabilisticKRot.o: trees/probabilisticKRot.cpp.o
+
+.PHONY : trees/probabilisticKRot.o
+
+# target to build an object file
+trees/probabilisticKRot.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/probabilisticKRot.cpp.o
+.PHONY : trees/probabilisticKRot.cpp.o
+
+trees/probabilisticKRot.i: trees/probabilisticKRot.cpp.i
+
+.PHONY : trees/probabilisticKRot.i
+
+# target to preprocess a source file
+trees/probabilisticKRot.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/probabilisticKRot.cpp.i
+.PHONY : trees/probabilisticKRot.cpp.i
+
+trees/probabilisticKRot.s: trees/probabilisticKRot.cpp.s
+
+.PHONY : trees/probabilisticKRot.s
+
+# target to generate assembly for a file
+trees/probabilisticKRot.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/probabilisticKRot.cpp.s
+.PHONY : trees/probabilisticKRot.cpp.s
+
 trees/regularBST.o: trees/regularBST.cpp.o
 
 .PHONY : trees/regularBST.o
@@ -413,33 +467,6 @@ trees/template.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/template.cpp.s
 .PHONY : trees/template.cpp.s
 
-trees/threeRotScheme.o: trees/threeRotScheme.cpp.o
-
-.PHONY : trees/threeRotScheme.o
-
-# target to build an object file
-trees/threeRotScheme.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/threeRotScheme.cpp.o
-.PHONY : trees/threeRotScheme.cpp.o
-
-trees/threeRotScheme.i: trees/threeRotScheme.cpp.i
-
-.PHONY : trees/threeRotScheme.i
-
-# target to preprocess a source file
-trees/threeRotScheme.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/threeRotScheme.cpp.i
-.PHONY : trees/threeRotScheme.cpp.i
-
-trees/threeRotScheme.s: trees/threeRotScheme.cpp.s
-
-.PHONY : trees/threeRotScheme.s
-
-# target to generate assembly for a file
-trees/threeRotScheme.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/threeRotScheme.cpp.s
-.PHONY : trees/threeRotScheme.cpp.s
-
 trees/vanilla.o: trees/vanilla.cpp.o
 
 .PHONY : trees/vanilla.o
@@ -494,6 +521,12 @@ help:
 	@echo "... tests/zipf.o"
 	@echo "... tests/zipf.i"
 	@echo "... tests/zipf.s"
+	@echo "... trees/kRotScheme.o"
+	@echo "... trees/kRotScheme.i"
+	@echo "... trees/kRotScheme.s"
+	@echo "... trees/probabilisticKRot.o"
+	@echo "... trees/probabilisticKRot.i"
+	@echo "... trees/probabilisticKRot.s"
 	@echo "... trees/regularBST.o"
 	@echo "... trees/regularBST.i"
 	@echo "... trees/regularBST.s"
@@ -506,9 +539,6 @@ help:
 	@echo "... trees/template.o"
 	@echo "... trees/template.i"
 	@echo "... trees/template.s"
-	@echo "... trees/threeRotScheme.o"
-	@echo "... trees/threeRotScheme.i"
-	@echo "... trees/threeRotScheme.s"
 	@echo "... trees/vanilla.o"
 	@echo "... trees/vanilla.i"
 	@echo "... trees/vanilla.s"

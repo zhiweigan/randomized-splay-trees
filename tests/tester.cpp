@@ -7,21 +7,32 @@ Tester::Tester(){
     // Trees
     BST* bst = new BST();
     SplayTree* vanillaT = new SplayTree();
-    Scheme1SplayTree* s1_10 = new Scheme1SplayTree();
+
     Scheme2SplayTree* s2_1 = new Scheme2SplayTree();
     OneRotSplayTree* oneRot = new OneRotSplayTree();
     ThreeRotSplayTree* threeRot = new ThreeRotSplayTree();
     FourRotSplayTree* fourRot = new FourRotSplayTree();
+
+    randomOneRotSplayTree* oneRotRand = new randomOneRotSplayTree(2);
+    Scheme1SplayTree* twoRotRand = new Scheme1SplayTree(2);
+    randomThreeRotSplayTree* threeRotRand = new randomThreeRotSplayTree(2);
+    randomFourRotSplayTree* fourRotRand = new randomFourRotSplayTree(2);
 //    TemplateSplayTree* templateT = new TemplateSplayTree();
 
     trees = new map<string, SplayTree*>();
     //trees->insert(make_pair("0: BST", bst)); // We need a name as well as the tree pointer
     trees->insert(make_pair("1: Vanilla", vanillaT));
-    trees->insert(make_pair("2: Scheme 1, p = 2^-10", s1_10));
+    trees->insert(make_pair("2a: Rand 1-Rot, p = 2^-1", oneRotRand));
+    trees->insert(make_pair("2b: Rand 2-Rot, p = 2^-1", twoRotRand));
+    trees->insert(make_pair("2c: Rand 3-Rot, p = 2^-1", threeRotRand));
+    trees->insert(make_pair("2d: Rand 4-Rot, p = 2^-1", fourRotRand));
+
     trees->insert(make_pair("3: Scheme 2, p = 2^-1", s2_1));
-    trees->insert(make_pair("4: OneRot", oneRot));
-    trees->insert(make_pair("5: ThreeRot", threeRot));
-    trees->insert(make_pair("6: FourRot", fourRot));
+
+    trees->insert(make_pair("4a: OneRot", oneRot));
+    trees->insert(make_pair("4b: Vanilla/TwoRot", vanillaT));
+    trees->insert(make_pair("4c: ThreeRot", threeRot));
+    trees->insert(make_pair("4d: FourRot", fourRot));
 //    trees->insert(make_pair("1: Template", templateT));
 
     // Tests

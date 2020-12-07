@@ -68,6 +68,14 @@ VariadicTable.h
 tests.h
 /Users/zhiweigan/Documents/randomized-splay-trees/tests/tests.h
 
+/Users/zhiweigan/Documents/randomized-splay-trees/trees/kRotScheme.cpp
+trees.h
+/Users/zhiweigan/Documents/randomized-splay-trees/trees/trees.h
+
+/Users/zhiweigan/Documents/randomized-splay-trees/trees/probabilisticKRot.cpp
+trees.h
+/Users/zhiweigan/Documents/randomized-splay-trees/trees/trees.h
+
 /Users/zhiweigan/Documents/randomized-splay-trees/trees/regularBST.cpp
 trees.h
 /Users/zhiweigan/Documents/randomized-splay-trees/trees/trees.h
@@ -81,10 +89,6 @@ trees.h
 /Users/zhiweigan/Documents/randomized-splay-trees/trees/trees.h
 
 /Users/zhiweigan/Documents/randomized-splay-trees/trees/template.cpp
-trees.h
-/Users/zhiweigan/Documents/randomized-splay-trees/trees/trees.h
-
-/Users/zhiweigan/Documents/randomized-splay-trees/trees/threeRotScheme.cpp
 trees.h
 /Users/zhiweigan/Documents/randomized-splay-trees/trees/trees.h
 

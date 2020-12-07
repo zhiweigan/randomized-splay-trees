@@ -31,6 +31,12 @@ CMakeFiles/randomized_splay_trees.dir/tests/zipf.cpp.o
  /Users/zhiweigan/Documents/randomized-splay-trees/tests/tests.h
  /Users/zhiweigan/Documents/randomized-splay-trees/tests/zipf.cpp
  /Users/zhiweigan/Documents/randomized-splay-trees/trees/trees.h
+CMakeFiles/randomized_splay_trees.dir/trees/kRotScheme.cpp.o
+ /Users/zhiweigan/Documents/randomized-splay-trees/trees/kRotScheme.cpp
+ /Users/zhiweigan/Documents/randomized-splay-trees/trees/trees.h
+CMakeFiles/randomized_splay_trees.dir/trees/probabilisticKRot.cpp.o
+ /Users/zhiweigan/Documents/randomized-splay-trees/trees/probabilisticKRot.cpp
+ /Users/zhiweigan/Documents/randomized-splay-trees/trees/trees.h
 CMakeFiles/randomized_splay_trees.dir/trees/regularBST.cpp.o
  /Users/zhiweigan/Documents/randomized-splay-trees/trees/regularBST.cpp
  /Users/zhiweigan/Documents/randomized-splay-trees/trees/trees.h
@@ -42,9 +48,6 @@ CMakeFiles/randomized_splay_trees.dir/trees/scheme2.cpp.o
  /Users/zhiweigan/Documents/randomized-splay-trees/trees/trees.h
 CMakeFiles/randomized_splay_trees.dir/trees/template.cpp.o
  /Users/zhiweigan/Documents/randomized-splay-trees/trees/template.cpp
- /Users/zhiweigan/Documents/randomized-splay-trees/trees/trees.h
-CMakeFiles/randomized_splay_trees.dir/trees/threeRotScheme.cpp.o
- /Users/zhiweigan/Documents/randomized-splay-trees/trees/threeRotScheme.cpp
  /Users/zhiweigan/Documents/randomized-splay-trees/trees/trees.h
 CMakeFiles/randomized_splay_trees.dir/trees/vanilla.cpp.o
  /Users/zhiweigan/Documents/randomized-splay-trees/trees/trees.h
