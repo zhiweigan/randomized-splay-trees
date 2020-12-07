@@ -9,7 +9,7 @@ int main() {
 
     // run tests here
     Tester tester;
-    tester.runAllTestsAllTrees();
+//    tester.runAllTestsAllTrees();
 
 
 //    SplayTree vanilla;
@@ -18,8 +18,8 @@ int main() {
 //    ZipfTest test;
 //    vector<double> res = test.MakeDist(10, 1.07);
 
-//    RandomTest randomTest;
-//    tester.runOneTestAllTrees(&randomTest);
+    OneTest oneTest;
+    tester.runOneTestAllTrees(&oneTest);
 //
 //    tester.runOneTestOneTree(&tempTree, &randomTest, "tempTree");
 

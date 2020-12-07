@@ -23,6 +23,8 @@ struct s
     ~s() {}
 };
 
+
+
 class SplayTree
 {
 protected:
@@ -41,6 +43,15 @@ public:
     s* root;
 };
 
+class BST : public SplayTree
+{
+public:
+    BST() : SplayTree() { }
+    void Insert(int key);
+    void Delete(int key);
+    s* Search(int key);
+};
+
 class Scheme1SplayTree : public SplayTree
 {
 private:
@@ -49,6 +60,19 @@ private:
     uniform_int_distribution<int> choice;
 public:
     Scheme1SplayTree(int p = 1 << 10) : SplayTree() {
+        choice = uniform_int_distribution<int>(0,p);
+    }
+    s* Search(int key);
+};
+
+class Scheme2SplayTree : public SplayTree
+{
+private:
+    void AccessSplay(s* x);
+    default_random_engine generator;
+    uniform_int_distribution<int> choice;
+public:
+    Scheme2SplayTree(int p = 1 << 1) : SplayTree() {
         choice = uniform_int_distribution<int>(0,p);
     }
     s* Search(int key);

@@ -170,6 +170,33 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+tests/justone.o: tests/justone.cpp.o
+
+.PHONY : tests/justone.o
+
+# target to build an object file
+tests/justone.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/tests/justone.cpp.o
+.PHONY : tests/justone.cpp.o
+
+tests/justone.i: tests/justone.cpp.i
+
+.PHONY : tests/justone.i
+
+# target to preprocess a source file
+tests/justone.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/tests/justone.cpp.i
+.PHONY : tests/justone.cpp.i
+
+tests/justone.s: tests/justone.cpp.s
+
+.PHONY : tests/justone.s
+
+# target to generate assembly for a file
+tests/justone.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/tests/justone.cpp.s
+.PHONY : tests/justone.cpp.s
+
 tests/random.o: tests/random.cpp.o
 
 .PHONY : tests/random.o
@@ -251,6 +278,33 @@ tests/zipf.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/tests/zipf.cpp.s
 .PHONY : tests/zipf.cpp.s
 
+trees/regularBST.o: trees/regularBST.cpp.o
+
+.PHONY : trees/regularBST.o
+
+# target to build an object file
+trees/regularBST.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/regularBST.cpp.o
+.PHONY : trees/regularBST.cpp.o
+
+trees/regularBST.i: trees/regularBST.cpp.i
+
+.PHONY : trees/regularBST.i
+
+# target to preprocess a source file
+trees/regularBST.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/regularBST.cpp.i
+.PHONY : trees/regularBST.cpp.i
+
+trees/regularBST.s: trees/regularBST.cpp.s
+
+.PHONY : trees/regularBST.s
+
+# target to generate assembly for a file
+trees/regularBST.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/regularBST.cpp.s
+.PHONY : trees/regularBST.cpp.s
+
 trees/scheme1.o: trees/scheme1.cpp.o
 
 .PHONY : trees/scheme1.o
@@ -277,6 +331,33 @@ trees/scheme1.s: trees/scheme1.cpp.s
 trees/scheme1.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/scheme1.cpp.s
 .PHONY : trees/scheme1.cpp.s
+
+trees/scheme2.o: trees/scheme2.cpp.o
+
+.PHONY : trees/scheme2.o
+
+# target to build an object file
+trees/scheme2.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/scheme2.cpp.o
+.PHONY : trees/scheme2.cpp.o
+
+trees/scheme2.i: trees/scheme2.cpp.i
+
+.PHONY : trees/scheme2.i
+
+# target to preprocess a source file
+trees/scheme2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/scheme2.cpp.i
+.PHONY : trees/scheme2.cpp.i
+
+trees/scheme2.s: trees/scheme2.cpp.s
+
+.PHONY : trees/scheme2.s
+
+# target to generate assembly for a file
+trees/scheme2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/scheme2.cpp.s
+.PHONY : trees/scheme2.cpp.s
 
 trees/template.o: trees/template.cpp.o
 
@@ -344,6 +425,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... tests/justone.o"
+	@echo "... tests/justone.i"
+	@echo "... tests/justone.s"
 	@echo "... tests/random.o"
 	@echo "... tests/random.i"
 	@echo "... tests/random.s"
@@ -353,9 +437,15 @@ help:
 	@echo "... tests/zipf.o"
 	@echo "... tests/zipf.i"
 	@echo "... tests/zipf.s"
+	@echo "... trees/regularBST.o"
+	@echo "... trees/regularBST.i"
+	@echo "... trees/regularBST.s"
 	@echo "... trees/scheme1.o"
 	@echo "... trees/scheme1.i"
 	@echo "... trees/scheme1.s"
+	@echo "... trees/scheme2.o"
+	@echo "... trees/scheme2.i"
+	@echo "... trees/scheme2.s"
 	@echo "... trees/template.o"
 	@echo "... trees/template.i"
 	@echo "... trees/template.s"
