@@ -24,7 +24,15 @@ cassert
 cmath
 -
 
+/Users/zhiweigan/Documents/randomized-splay-trees/tests/justone.cpp
+tests.h
+/Users/zhiweigan/Documents/randomized-splay-trees/tests/tests.h
+
 /Users/zhiweigan/Documents/randomized-splay-trees/tests/random.cpp
+tests.h
+/Users/zhiweigan/Documents/randomized-splay-trees/tests/tests.h
+
+/Users/zhiweigan/Documents/randomized-splay-trees/tests/splayline.cpp
 tests.h
 /Users/zhiweigan/Documents/randomized-splay-trees/tests/tests.h
 
@@ -43,6 +51,10 @@ random
 -
 VariadicTable.h
 /Users/zhiweigan/Documents/randomized-splay-trees/tests/VariadicTable.h
+
+/Users/zhiweigan/Documents/randomized-splay-trees/tests/zipf.cpp
+tests.h
+/Users/zhiweigan/Documents/randomized-splay-trees/tests/tests.h
 
 /Users/zhiweigan/Documents/randomized-splay-trees/trees/trees.h
 iostream

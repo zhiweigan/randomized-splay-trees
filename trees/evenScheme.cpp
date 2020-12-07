@@ -28,6 +28,7 @@ s* EvenSplayTree::Search(int key) {
     s* z = root;
     int k = 0;
     while (z) {
+        followedPointers += 1;
         if (z->key < key) z = z->right;
         else if (z->key > key) z = z->left;
         else {

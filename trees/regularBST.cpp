@@ -13,6 +13,7 @@ void BST::Insert(int key)
         p = z;
         if (z->key < key) z = z->right;
         else z = z->left;
+        followedPointers += 1;
     }
 
     z = new s(key);
@@ -28,6 +29,7 @@ void BST::Insert(int key)
 s* BST::Search(int key) {
     s *z = root;
     while (z) {
+        followedPointers += 1;
         if (z->key < key) z = z->right;
         else if (key < z->key) z = z->left;
         else return z;

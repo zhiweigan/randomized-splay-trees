@@ -8,6 +8,7 @@ s* randomThreeRotSplayTree::Search(int key)
 {
     s *z = root;
     while (z) {
+        followedPointers += 1;
         if (z->key < key) z = z->right;
         else if (key < z->key) z = z->left;
         else {
@@ -23,6 +24,7 @@ s* randomOneRotSplayTree::Search(int key)
 {
     s *z = root;
     while (z) {
+        followedPointers += 1;
         if (z->key < key) z = z->right;
         else if (key < z->key) z = z->left;
         else {
@@ -38,6 +40,7 @@ s* randomFourRotSplayTree::Search(int key)
 {
     s *z = root;
     while (z) {
+        followedPointers += 1;
         if (z->key < key) z = z->right;
         else if (key < z->key) z = z->left;
         else {

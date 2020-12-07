@@ -37,24 +37,27 @@ void OneTest::RunOnTrees(map<string, SplayTree*>* trees) {
 
     for(pair<string, SplayTree*> tree : *trees){
         vt.addRow(tree.first, "", "", "", "");
+        SplayTree* t = tree.second;
         for(int trial : trials){
-            int startInsert = clock();
+            t->resetCount();
             this->Insert(trial, tree.second);
+            string insert = to_string(t->rotationCount) + " "
+                            + to_string(t->followedPointers) + " "
+                            + to_string((int)((double)(t->rotationCount) * 2.3 + t->followedPointers));
 
-            int endInsert = clock();
-            double time1 = (double)(endInsert - startInsert)/CLOCKS_PER_SEC * 1000;
-
-            int startAccess = clock();
+            t->resetCount();
             this->Access(trial, tree.second);
-            int endAccess = clock();
-            double time2 = (double)(endAccess - startAccess)/CLOCKS_PER_SEC * 1000;
+            string access = to_string(t->rotationCount) + " "
+                            + to_string(t->followedPointers) + " "
+                            + to_string((int)((double)(t->rotationCount) * 2.3 + t->followedPointers));
 
-            int startDelete = clock();
+            t->resetCount();
             this->Delete(trial, tree.second);
-            int endDelete = clock();
-            double time3 = (double)(endDelete - startDelete)/CLOCKS_PER_SEC * 1000;
+            string del = to_string(t->rotationCount) + " "
+                         + to_string(t->followedPointers) + " "
+                         + to_string((int)((double)(t->rotationCount) * 2.3 + t->followedPointers));
 
-            vt.addRow("", to_string(trial), to_string(time1), to_string(time2), to_string(time3));
+            vt.addRow("", to_string(trial), insert, access, del);
         }
     }
     vt.print(std::cout);

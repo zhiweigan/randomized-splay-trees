@@ -28,7 +28,7 @@ struct s
 
 class SplayTree
 {
-protected:
+public:
     virtual void L_Rotate(s* k2);
     virtual void R_Rotate(s* k2);
     virtual void Splay(s* x);
@@ -37,12 +37,15 @@ protected:
     void replace(s *u, s *v);
     void printHelper(const std::string& prefix, const s* node, bool isLeft);
     unsigned long p_size;
-public:
+    int rotationCount = 0;
+    int followedPointers = 0;
     SplayTree() : root(nullptr), p_size(0) { }
     virtual void Insert(int key);
     virtual void Delete(int key);
+
     virtual s* Search(int key);
     void prettyPrint();
+    void resetCount();
     s* root;
 };
 

@@ -40,17 +40,19 @@ void SplayLineTest::RunOnTrees(map<string, SplayTree*>* trees) {
 
     for(pair<string, SplayTree*> tree : *trees){
         vt.addRow(tree.first, "", "");
+        SplayTree* t = tree.second;
         for(int trial : trials){
             this->Insert(trial, tree.second);
 
-            int startAccess = clock();
+            t->resetCount();
             this->Access(trial, tree.second);
-            int endAccess = clock();
-            double time2 = (double)(endAccess - startAccess)/CLOCKS_PER_SEC * 1000;
+            string access = to_string(t->rotationCount) + " "
+                            + to_string(t->followedPointers) + " "
+                            + to_string((int)((double)(t->rotationCount) * 2.3 + t->followedPointers));
 
             this->Delete(trial, tree.second);
 
-            vt.addRow("", to_string(trial), to_string(time2));
+            vt.addRow("", to_string(trial), access);
         }
     }
     vt.print(std::cout);
