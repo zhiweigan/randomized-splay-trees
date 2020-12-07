@@ -8,17 +8,21 @@ Tester::Tester(){
     BST* bst = new BST();
     SplayTree* vanillaT = new SplayTree();
 
-
     OneRotSplayTree* oneRot = new OneRotSplayTree();
     ThreeRotSplayTree* threeRot = new ThreeRotSplayTree();
     FourRotSplayTree* fourRot = new FourRotSplayTree();
     EvenSplayTree* even = new EvenSplayTree();
 
-    Scheme2SplayTree* s2_1 = new Scheme2SplayTree();
+    Scheme2SplayTree* s2 = new Scheme2SplayTree();
     randomOneRotSplayTree* oneRotRand = new randomOneRotSplayTree(2);
     Scheme1SplayTree* twoRotRand = new Scheme1SplayTree(2);
     randomThreeRotSplayTree* threeRotRand = new randomThreeRotSplayTree(2);
     randomFourRotSplayTree* fourRotRand = new randomFourRotSplayTree(2);
+
+    Scheme2SplayTree* s2_1 = new Scheme2SplayTree(4);
+    Scheme1SplayTree* twoRotRand_1 = new Scheme1SplayTree(4);
+    randomThreeRotSplayTree* threeRotRand_1 = new randomThreeRotSplayTree(4);
+    randomFourRotSplayTree* fourRotRand_1 = new randomFourRotSplayTree(4);
 //    TemplateSplayTree* templateT = new TemplateSplayTree();
 
     trees = new map<string, SplayTree*>();
@@ -29,14 +33,19 @@ Tester::Tester(){
     trees->insert(make_pair("2c: Rand 3-Rot, p = 2^-1", threeRotRand));
     trees->insert(make_pair("2d: Rand 4-Rot, p = 2^-1", fourRotRand));
 
-    trees->insert(make_pair("3: Scheme 2, p = 2^-1", s2_1));
+    trees->insert(make_pair("3b: Rand 2-Rot, p = 2^-2", twoRotRand_1));
+    trees->insert(make_pair("3c: Rand 3-Rot, p = 2^-2", threeRotRand_1));
+    trees->insert(make_pair("3d: Rand 4-Rot, p = 2^-2", fourRotRand_1));
+
+    trees->insert(make_pair("4: Scheme 2, p = 2^-1", s2));
+    trees->insert(make_pair("4: Scheme 2, p = 2^-2", s2_1));
 
 //    trees->insert(make_pair("4a: OneRot", oneRot));
-    trees->insert(make_pair("4b: Vanilla/TwoRot", vanillaT));
-    trees->insert(make_pair("4c: ThreeRot", threeRot));
-    trees->insert(make_pair("4d: FourRot", fourRot));
-
-    trees->insert(make_pair("5: EvenScheme", even));
+//    trees->insert(make_pair("4b: Vanilla/TwoRot", vanillaT));
+//    trees->insert(make_pair("4c: ThreeRot", threeRot));
+//    trees->insert(make_pair("4d: FourRot", fourRot));
+//
+//    trees->insert(make_pair("5: EvenScheme", even));
 //    trees->insert(make_pair("1: Template", templateT));
 
     // Tests

@@ -6,6 +6,11 @@
 #include "trees.h"
 using namespace std;
 
+void SplayTree::resetCount() {
+    this->followedPointers = 0;
+    this->rotationCount = 0;
+}
+
 void SplayTree::L_Rotate(s* x)
 {
     s *y = x->right;
@@ -14,6 +19,8 @@ void SplayTree::L_Rotate(s* x)
         if (y->left) y->left->parent = x;
         y->parent = x->parent;
     }
+
+    this->rotationCount += 1;
 
     if (!x->parent) root = y;
     else if (x == x->parent->left) x->parent->left = y;
@@ -30,6 +37,9 @@ void SplayTree::R_Rotate(s* x)
         if (y->right) y->right->parent = x;
         y->parent = x->parent;
     }
+
+    this->rotationCount += 1;
+
     if (!x->parent) root = y;
     else if (x == x->parent->left) x->parent->left = y;
     else x->parent->right = y;
@@ -60,12 +70,18 @@ void SplayTree::Splay(s *x)
 }
 
 s* SplayTree::subtree_minimum(s *u) {
-    while (u->left) u = u->left;
+    while (u->left) {
+        u = u->left;
+        followedPointers += 1;
+    }
     return u;
 }
 
 s* SplayTree::subtree_maximum(s *u) {
-    while (u->right) u = u->right;
+    while (u->right) {
+        u = u->right;
+        followedPointers += 1;
+    }
     return u;
 }
 
@@ -98,6 +114,7 @@ void SplayTree::Insert(int key)
         p = z;
         if (z->key < key) z = z->right;
         else z = z->left;
+        followedPointers += 1;
     }
 
     z = new s(key);
@@ -147,6 +164,7 @@ s* SplayTree::Search(int key) //searching
 {
     s *z = root;
     while (z) {
+        followedPointers += 1;
         if (z->key < key) z = z->right;
         else if (key < z->key) z = z->left;
         else {

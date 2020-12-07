@@ -10,6 +10,27 @@ int main() {
     // run tests here
     Tester tester;
     tester.runAllTestsAllTrees();
+//
+//    SplayTree vanilla;
+//    for (int i = 0; i < 1000000; i++){
+//        vanilla.Insert(i);
+//    }
+//
+//    long start = clock();
+//    for(int i = 0; i < 100000; i++){
+//        vanilla.R_Rotate(vanilla.root);
+//    }
+//    long end = clock();
+//    cout<<end-start<<endl;
+//
+//    s* a = vanilla.root;
+//    start = clock();
+//    for (int i = 0; i < 100000; i++){
+//        a = a->right;
+//    }
+//    end = clock();
+//    cout<<end-start<<endl;
+
 
 
 //    SplayTree vanilla;

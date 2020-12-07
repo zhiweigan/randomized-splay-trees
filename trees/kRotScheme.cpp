@@ -78,6 +78,7 @@ s* ThreeRotSplayTree::Search(int key)
 {
     s *z = root;
     while (z) {
+        followedPointers += 1;
         if (z->key < key) z = z->right;
         else if (key < z->key) z = z->left;
         else {
@@ -100,6 +101,7 @@ s* OneRotSplayTree::Search(int key)
 {
     s *z = root;
     while (z) {
+        followedPointers += 1;
         if (z->key < key) z = z->right;
         else if (key < z->key) z = z->left;
         else {
@@ -296,6 +298,7 @@ s* FourRotSplayTree::Search(int key)
 {
     s *z = root;
     while (z) {
+        followedPointers += 1;
         if (z->key < key) z = z->right;
         else if (key < z->key) z = z->left;
         else {
