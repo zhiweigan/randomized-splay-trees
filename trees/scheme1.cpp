@@ -46,6 +46,7 @@ s* Scheme1_2Rot::Search(int key) //searching
         if (z->key < key) z = z->right;
         else if (key < z->key) z = z->left;
         else {
+            followedPointers -= 1;
             int action = this->choice(this->generator);
             if (this->invert) {
                 if (action != 0) this->AccessSplay(z);

@@ -168,6 +168,7 @@ s* SplayTree::Search(int key) //searching
         if (z->key < key) z = z->right;
         else if (key < z->key) z = z->left;
         else {
+            followedPointers -= 1;
             this->Splay(z);
             return z;
         }

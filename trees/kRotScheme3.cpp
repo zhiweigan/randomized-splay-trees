@@ -8,8 +8,12 @@ void Scheme3_1Rot::AccessSplay(s* x)
 {
     while (x->parent) {
         int action = this->choice(this->generator);
-        if ((action == 0) != this->invert && x->parent){
-            x = x->parent;
+        if (((action == 0) != this->invert)){
+            rotationCount -= 1;
+            followedPointers += 1;
+            if (x->parent) {
+                x = x->parent;
+            }
             continue;
         }
         if (x->parent->left == x) R_Rotate(x->parent);
@@ -21,8 +25,14 @@ void Scheme3_3Rot::AccessSplay(s *x)
 {
     while (x->parent) {
         int action = this->choice(this->generator);
-        if ((action == 0) != this->invert && x->parent->parent && x->parent->parent->parent){
-            x = x->parent->parent->parent;
+        if (((action == 0) != this->invert)){
+            rotationCount -= 1;
+            followedPointers += 1;
+            if (x->parent->parent && x->parent->parent->parent) {
+                x = x->parent->parent->parent;
+            } else {
+                x = x->parent;
+            }
             continue;
         }
         if (!x->parent->parent) {
@@ -97,8 +107,14 @@ void Scheme3_3Rot::AccessSplay(s *x)
 void Scheme3_4Rot::AccessSplay(s *x) {
     while (x->parent) {
         int action = this->choice(this->generator);
-        if ((action == 0) != this->invert && x->parent->parent && x->parent->parent->parent && x->parent->parent->parent->parent){
-            x = x->parent->parent->parent->parent;
+        if (((action == 0) != this->invert)){
+            rotationCount -= 1;
+            followedPointers += 1;
+            if (x->parent->parent && x->parent->parent->parent && x->parent->parent->parent->parent) {
+                x = x->parent->parent->parent->parent;
+            } else {
+                x = x->parent;
+            }
             continue;
         }
         if (!x->parent->parent) {

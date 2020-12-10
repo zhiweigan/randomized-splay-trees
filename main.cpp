@@ -158,12 +158,14 @@ void runScheme1_2Rot (Tester tester){
     }
 
     for(int i = -8; i <= 8; i++){
+        if (i == -8 || i == 0 || i == -1 || i == 8) continue;
         if (i <= -1) {
             cout << "$1 - 2^{-" << abs(i) << "}$ ";
         }
         else {
             cout << "$2^{-" << i << "}$ ";
         }
+
         for (pair<string, map<int, long>> test : temp) {
             cout<<" & "<<scientificNumber(test.second[i], 2);
         }
@@ -173,7 +175,9 @@ void runScheme1_2Rot (Tester tester){
     for (pair<string, map<int, long>> test : temp){
         cout<<"\\addplot[color, mark=square] coordinates {";
         for (int i = -8; i <= 8; i++){
-            cout<<"("<<i<<", "<<scientificNumber2(test.second[i], 2)<<") " ;
+            if (i == -8 || i == 0 || i == -1 || i == 8) continue;
+            int toAdd = (i > 0) ? -1 : 1;
+            cout<<"("<<i+toAdd<<", "<<scientificNumber2(test.second[i], 2)<<") " ;
         }
         cout<<"};"<<endl;
     }
@@ -200,12 +204,14 @@ void runScheme2_2Rot (Tester tester){
     }
 
     for(int i = -8; i <= 8; i++){
+        if (i == -8 || i == 0 || i == -1 || i == 8) continue;
         if (i <= -1) {
             cout << "$1 - 2^{-" << abs(i) << "}$ ";
         }
         else {
             cout << "$2^{-" << i << "}$ ";
         }
+
         for (pair<string, map<int, long>> test : temp) {
             cout<<" & "<<scientificNumber(test.second[i], 2);
         }
@@ -217,7 +223,9 @@ void runScheme2_2Rot (Tester tester){
         cout<<"\\addplot["<<colors[iter]<<", mark=square] coordinates {";
         iter += 1;
         for (int i = -8; i <= 8; i++){
-            cout<<"("<<i<<", "<<scientificNumber2(test.second[i], 2)<<") " ;
+            if (i == -8 || i == 0 || i == -1 || i == 8) continue;
+            int toAdd = (i > 0) ? -1 : 1;
+            cout<<"("<<i+toAdd<<", "<<scientificNumber2(test.second[i], 2)<<") " ;
         }
         cout<<"};"<<endl;
     }
@@ -244,6 +252,7 @@ void runScheme3_2Rot (Tester tester){
     }
 
     for(int i = -8; i <= 8; i++){
+        if (i == -8 || i == 0 || i == -1 || i == 8) continue;
         if (i <= -1) {
             cout << "$1 - 2^{-" << abs(i) << "}$ ";
         }
@@ -262,7 +271,9 @@ void runScheme3_2Rot (Tester tester){
         cout<<"\\addplot["<<colors[iter]<<", mark=square] coordinates {";
         iter += 1;
         for (int i = -8; i <= 8; i++){
-            cout<<"("<<i<<", "<<scientificNumber2(test.second[i], 2)<<") " ;
+            if (i == -8 || i == 0 || i == -1 || i == 8) continue;
+            int toAdd = (i > 0) ? -1 : 1;
+            cout<<"("<<-i<<", "<<scientificNumber2(test.second[i]+toAdd, 2)<<") " ;
         }
         cout<<"};"<<endl;
     }
@@ -279,11 +290,11 @@ int main() {
     // run tests here
     Tester tester;
 
-    // Run Deterministic
+//    // Run Deterministic
 //    cout<<"Deterministic"<<endl;
 //    runDeterministic(tester);
-//
-//    // Run Simple Schemes
+
+    // Run Simple Schemes
     cout<<"Simple 1"<<endl;
     runScheme1Simple(tester);
     cout<<"Simple 2"<<endl;

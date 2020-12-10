@@ -6,6 +6,14 @@
 
 #IncludeRegexTransform: 
 
+/Users/zhiweigan/Documents/randomized-splay-trees/main.cpp
+iostream
+-
+tests/tests.h
+/Users/zhiweigan/Documents/randomized-splay-trees/tests/tests.h
+trees/trees.h
+/Users/zhiweigan/Documents/randomized-splay-trees/trees/trees.h
+
 /Users/zhiweigan/Documents/randomized-splay-trees/tests/VariadicTable.h
 iostream
 -

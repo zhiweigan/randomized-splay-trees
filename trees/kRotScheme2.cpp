@@ -12,6 +12,7 @@ s* Scheme2_1Rot::Search(int key)
         if (z->key < key) z = z->right;
         else if (key < z->key) z = z->left;
         else {
+            followedPointers -= 1;
             int action = this->choice(this->generator);
             if ((action == 0) != this->invert) this->AccessSplay(z);
             else if (z->parent != nullptr) this->AccessSplay(z->parent);
@@ -29,6 +30,7 @@ s* Scheme2_3Rot::Search(int key)
         if (z->key < key) z = z->right;
         else if (key < z->key) z = z->left;
         else {
+            followedPointers -= 1;
             int action = this->choice(this->generator);
             if ((action == 0) != this->invert) this->AccessSplay(z);
             else if (z->parent != nullptr) this->AccessSplay(z->parent);
@@ -308,6 +310,7 @@ s* Scheme2_4Rot::Search(int key)
         if (z->key < key) z = z->right;
         else if (key < z->key) z = z->left;
         else {
+            followedPointers -= 1;
             int action = this->choice(this->generator);
             if ((action == 0) != this->invert) this->AccessSplay(z);
             // bool = 0, invert = 0, out = 0

@@ -13,7 +13,7 @@ void OneTest::Insert(int n, SplayTree* tree) {
 
 void OneTest::Delete(int n, SplayTree* tree) {
     for(int i = 0; i < n; i++){
-        tree->Delete(n-i-1);
+        tree->Delete(i);
     }
 }
 
@@ -29,11 +29,13 @@ map<string, result> OneTest::RunOnTrees(map<string, SplayTree*>* trees) {
 
     map<string, result> out;
     for(pair<string, SplayTree*> tree : *trees){
-        //cout<<tree.first<<endl;
+        cout<<tree.first<<endl;
         SplayTree* t = tree.second;
-        if (tree.first.find("BST") != string::npos
-            || tree.first.find("1-") != string::npos
-             || tree.first.find("d-1") != string::npos
+        if (
+                //true
+                tree.first.find("BST") != string::npos
+//            || tree.first.find("1-") != string::npos
+//             || tree.first.find("d-1") != string::npos
                 || tree.first.find("3b: III-Rand-2, 0") != string::npos
             ){
             if (trial > 5000) {

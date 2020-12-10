@@ -32,6 +32,7 @@ s* EvenSplayTree::Search(int key) {
         if (z->key < key) z = z->right;
         else if (z->key > key) z = z->left;
         else {
+            followedPointers -= 1;
             if (k % 2) {
                 this->AccessSplay(z->parent);
             }

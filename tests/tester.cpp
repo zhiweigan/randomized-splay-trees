@@ -106,11 +106,11 @@ Tester::Tester(){
 //    tests->push_back(alternatingTest);
 
     testNames = new vector<string>();
-    //testNames->push_back("1: Uniform");
+//    testNames->push_back("1: Uniform");
 //    testNames->push_back("2: Zipf");
-    //testNames->push_back("3: $n \\to 1$");
+//    testNames->push_back("3: Stack");
     testNames->push_back("4: Line");
-    //testNames->push_back("5: Alternating");
+//    testNames->push_back("5: Random Line");
 }
 
 //======================================================================================================================

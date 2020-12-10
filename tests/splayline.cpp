@@ -53,7 +53,7 @@ int getMaxDepth(s* node, int curDepth) {
 vector<pair<int, int>> SplayLineTest::Access(int n, SplayTree* tree, bool check) { // Inserts n items between 1 to n at random
     vector<pair<int, int>> depth;
     for(int i = 0; i < n; i++){
-        if (i % n/20 == 0 && check) {
+        if ((i % 1 == 0) && i <= 20 && check) {
             int d = getMaxDepth(tree->root, 1);
             depth.push_back(make_pair(i, d));
         }
@@ -66,6 +66,8 @@ map<string, result> SplayLineTest::RunOnTrees(map<string, SplayTree*>* trees) {
 
     cout<<"Testing SplayLineTest"<<endl;
     map<string, result> out;
+
+
     for(pair<string, SplayTree*> tree : *trees){
         //cout<<tree.first<<endl;
         SplayTree* t = tree.second;
@@ -83,14 +85,16 @@ map<string, result> SplayLineTest::RunOnTrees(map<string, SplayTree*>* trees) {
         this->Insert(trial, tree.second);
 
         t->resetCount();
-        bool check = tree.first.find("d-4") != string::npos || tree.first.find("Splay") != string::npos;
-//        bool check = false;
+        bool check = tree.first.find("d-2") != string::npos || tree.first.find("Splay") != string::npos;
+//        bool check = true;
         vector<pair<int, int>> depth = this->Access(trial, tree.second, check);
         out.insert(make_pair(tree.first, result(t->rotationCount, t->followedPointers)));
 
+        cout<<tree.first<<endl;
         for(int i = 0; i < depth.size(); i++){
             cout<<"("<<depth[i].first<<", "<<depth[i].second<<") ";
         }
+        cout<<endl;
 
         this->Delete(trial, tree.second);
     }

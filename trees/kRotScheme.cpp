@@ -82,6 +82,7 @@ s* ThreeRotSplayTree::Search(int key)
         if (z->key < key) z = z->right;
         else if (key < z->key) z = z->left;
         else {
+            followedPointers -= 1;
             this->AccessSplay(z);
             return z;
         }
@@ -105,6 +106,7 @@ s* OneRotSplayTree::Search(int key)
         if (z->key < key) z = z->right;
         else if (key < z->key) z = z->left;
         else {
+            followedPointers -= 1;
             this->AccessSplay(z);
             return z;
         }
@@ -302,6 +304,7 @@ s* FourRotSplayTree::Search(int key)
         if (z->key < key) z = z->right;
         else if (key < z->key) z = z->left;
         else {
+            followedPointers -= 1;
             this->AccessSplay(z);
             return z;
         }
