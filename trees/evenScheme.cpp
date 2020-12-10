@@ -32,10 +32,10 @@ s* EvenSplayTree::Search(int key) {
         else if (z->key > key) z = z->left;
         else {
             if (k % 2) {
-                this->AccessSplay(z);
+                this->AccessSplay(z->parent);
             }
             else {
-                this->AccessSplay(z->parent);
+                this->AccessSplay(z);
             }
             return z;
         }
