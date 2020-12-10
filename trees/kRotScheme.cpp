@@ -294,7 +294,7 @@ void FourRotSplayTree::AccessSplay(s* x)
 
 s* FourRotSplayTree::Search(int key)
 {
-   s *z = root;
+    s *z = root;
     while (z) {
         if (z->key < key) z = z->right;
         else if (key < z->key) z = z->left;
