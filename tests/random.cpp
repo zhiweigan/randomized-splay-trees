@@ -39,42 +39,20 @@ void RandomTest::Access(int n, SplayTree* tree) { // Inserts n items between 1 t
     }
 }
 
-void RandomTest::RunOnTrees(map<string, SplayTree*>* trees) {
-    int trials[4] = {100, 10000, 100000, 1000000};
+map<string, result> RandomTest::RunOnTrees(map<string, SplayTree*>* trees) {
 
     cout<<"Testing RandomTest"<<endl;
-    VariadicTable<string, string, string, string, string> vt({"Tree Type",
-                                                      "N",
-                                                      "Insert Only [ms]",
-                                                      "Access Only [ms]",
-                                                      "Delete Only [ms]"
-                                                      },
-                                                            10);
+    map<string, result> out;
 
     for(pair<string, SplayTree*> tree : *trees){
-        vt.addRow(tree.first, "", "", "", "");
         SplayTree* t = tree.second;
-        for(int trial : trials){
-            t->resetCount();
-            this->Insert(trial, tree.second);
-            string insert = to_string(t->rotationCount) + " "
-                    + to_string(t->followedPointers) + " "
-                    + to_string((int)((double)(t->rotationCount) * 2.3 + t->followedPointers));
+        this->Insert(trial, tree.second);
 
-            t->resetCount();
-            this->Access(trial, tree.second);
-            string access = to_string(t->rotationCount) + " "
-                    + to_string(t->followedPointers) + " "
-                    + to_string((int)((double)(t->rotationCount) * 2.3 + t->followedPointers));
+        t->resetCount();
+        this->Access(trial, tree.second);
+        out.insert(make_pair(tree.first, result(t->rotationCount, t->followedPointers)));
 
-            t->resetCount();
-            this->Delete(trial, tree.second);
-            string del = to_string(t->rotationCount) + " "
-                    + to_string(t->followedPointers) + " "
-                    + to_string((int)((double)(t->rotationCount) * 2.3 + t->followedPointers));
-
-            vt.addRow("", to_string(trial), insert, access, del);
-        }
+        this->Delete(trial, tree.second);
     }
-    vt.print(std::cout);
+    return out;
 }

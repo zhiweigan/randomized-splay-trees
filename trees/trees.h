@@ -24,8 +24,6 @@ struct s
     ~s() {}
 };
 
-
-
 class SplayTree
 {
 public:
@@ -47,8 +45,11 @@ public:
     void prettyPrint();
     void resetCount();
     s* root;
+    bool invert = false;
 };
 
+
+// Deterministic
 class BST : public SplayTree
 {
 public:
@@ -58,104 +59,35 @@ public:
     s* Search(int key);
 };
 
-class Scheme1SplayTree : public SplayTree
-{
-private:
-    void AccessSplay(s* x);
-    default_random_engine generator;
-    uniform_int_distribution<int> choice;
-public:
-    Scheme1SplayTree(int p = 1 << 10) : SplayTree() {
-        choice = uniform_int_distribution<int>(0,p);
-    }
-    s* Search(int key);
-};
 
-class Scheme2SplayTree : public SplayTree
-{
-private:
-    void AccessSplay(s* x);
-    default_random_engine generator;
-    uniform_int_distribution<int> choice;
-public:
-    Scheme2SplayTree(int p = 1 << 1) : SplayTree() {
-        choice = uniform_int_distribution<int>(0,p);
-    }
-    s* Search(int key);
-};
-
-class Scheme3SplayTree : public SplayTree
-{
-private:
-    void AccessSplay(s* x);
-    default_random_engine generator;
-    uniform_int_distribution<int> choice;
-public:
-    Scheme3SplayTree(int p = 1 << 1) : SplayTree() {
-        choice = uniform_int_distribution<int>(0,p);
-    }
-    s* Search(int key);
-};
 
 class ThreeRotSplayTree : public SplayTree
 {
 protected:
-    void AccessSplay(s* x);
+    virtual void AccessSplay(s* x);
 public:
     ThreeRotSplayTree() : SplayTree() {}
-    s* Search(int key);
-};
-
-class randomThreeRotSplayTree : public ThreeRotSplayTree
-{
-    default_random_engine generator;
-    uniform_int_distribution<int> choice;
-public:
-    randomThreeRotSplayTree(int p = 1 << 1) : ThreeRotSplayTree() {
-        choice = uniform_int_distribution<int>(0,p);
-    }
     s* Search(int key);
 };
 
 class OneRotSplayTree : public SplayTree
 {
 protected:
-    void AccessSplay(s* x);
+    virtual void AccessSplay(s* x);
 public:
     OneRotSplayTree() : SplayTree() {}
-    s* Search(int key);
-};
-
-class randomOneRotSplayTree : public OneRotSplayTree
-{
-    default_random_engine generator;
-    uniform_int_distribution<int> choice;
-public:
-    randomOneRotSplayTree(int p = 1 << 1) : OneRotSplayTree() {
-        choice = uniform_int_distribution<int>(0,p);
-    }
     s* Search(int key);
 };
 
 class FourRotSplayTree : public SplayTree
 {
 protected:
-    void AccessSplay(s* x);
+    virtual void AccessSplay(s* x);
 public:
     FourRotSplayTree() : SplayTree() {}
     s* Search(int key);
 };
 
-class randomFourRotSplayTree : public FourRotSplayTree
-{
-    default_random_engine generator;
-    uniform_int_distribution<int> choice;
-public:
-    randomFourRotSplayTree(int p = 1 << 1) : FourRotSplayTree() {
-        choice = uniform_int_distribution<int>(0,p);
-    }
-    s* Search(int key);
-};
 
 class EvenSplayTree : public SplayTree
 {
@@ -164,6 +96,165 @@ public:
     EvenSplayTree() : SplayTree() {}
     s* Search(int key);
 };
+
+
+// Randomized
+class Scheme1_3Rot : public ThreeRotSplayTree
+{
+    default_random_engine generator;
+    uniform_int_distribution<int> choice;
+public:
+    Scheme1_3Rot(int p = 1 << 1, bool invert = false) : ThreeRotSplayTree() {
+        choice = uniform_int_distribution<int>(0,p-1);
+        this->invert = invert;
+    }
+    s* Search(int key);
+};
+
+class Scheme1_1Rot : public OneRotSplayTree
+{
+    default_random_engine generator;
+    uniform_int_distribution<int> choice;
+public:
+    Scheme1_1Rot(int p = 1 << 1, bool invert = false) : OneRotSplayTree() {
+        choice = uniform_int_distribution<int>(0,p-1);
+        this->invert = invert;
+    }
+    s* Search(int key);
+};
+
+
+class Scheme1_4Rot : public FourRotSplayTree
+{
+    default_random_engine generator;
+    uniform_int_distribution<int> choice;
+public:
+    Scheme1_4Rot(int p = 1 << 1, bool invert = false) : FourRotSplayTree() {
+        choice = uniform_int_distribution<int>(0,p-1);
+        this->invert = invert;
+    }
+    s* Search(int key);
+};
+
+class Scheme1_2Rot : public SplayTree
+{
+private:
+    void AccessSplay(s* x);
+    default_random_engine generator;
+    uniform_int_distribution<int> choice;
+public:
+    Scheme1_2Rot(int p = 1 << 1, bool invert = false) : SplayTree() {
+        choice = uniform_int_distribution<int>(0,p-1);
+        this->invert = invert;
+    }
+    s* Search(int key);
+};
+
+class Scheme2_2Rot : public SplayTree
+{
+private:
+    void AccessSplay(s* x);
+    default_random_engine generator;
+    uniform_int_distribution<int> choice;
+public:
+    Scheme2_2Rot(int p = 1 << 1, bool invert = false) : SplayTree() {
+        choice = uniform_int_distribution<int>(0,p-1);
+        this->invert = invert;
+    }
+    s* Search(int key);
+};
+
+class Scheme2_4Rot : public FourRotSplayTree
+{
+    default_random_engine generator;
+    uniform_int_distribution<int> choice;
+    void AccessSplay(s* x);
+public:
+    Scheme2_4Rot(int p = 1 << 1, bool invert = false) : FourRotSplayTree() {
+        choice = uniform_int_distribution<int>(0,p-1);
+        this->invert = invert;
+    }
+    s* Search(int key);
+};
+
+class Scheme2_3Rot : public ThreeRotSplayTree
+{
+    default_random_engine generator;
+    uniform_int_distribution<int> choice;
+    void AccessSplay(s* x);
+public:
+    Scheme2_3Rot(int p = 1 << 1, bool invert = false) : ThreeRotSplayTree() {
+        choice = uniform_int_distribution<int>(0,p-1);
+        this->invert = invert;
+    }
+    s* Search(int key);
+};
+
+class Scheme2_1Rot : public OneRotSplayTree
+{
+    default_random_engine generator;
+    uniform_int_distribution<int> choice;
+    void AccessSplay(s* x);
+public:
+    Scheme2_1Rot(int p = 1 << 1, bool invert = false) : OneRotSplayTree() {
+        choice = uniform_int_distribution<int>(0,p-1);
+        this->invert = invert;
+    }
+    s* Search(int key);
+};
+
+class Scheme3_2Rot : public SplayTree
+{
+private:
+    void AccessSplay(s* x);
+    default_random_engine generator;
+    uniform_int_distribution<int> choice;
+public:
+    Scheme3_2Rot(int p = 1 << 1, bool invert = false) : SplayTree() {
+        choice = uniform_int_distribution<int>(0,p-1);
+        this->invert = invert;
+    }
+    s* Search(int key);
+};
+
+class Scheme3_4Rot : public FourRotSplayTree
+{
+    default_random_engine generator;
+    uniform_int_distribution<int> choice;
+    void AccessSplay(s* x);
+public:
+    Scheme3_4Rot(int p = 1 << 1, bool invert = false) : FourRotSplayTree() {
+        choice = uniform_int_distribution<int>(0,p-1);
+        this->invert = invert;
+    }
+};
+
+class Scheme3_3Rot : public ThreeRotSplayTree
+{
+    default_random_engine generator;
+    uniform_int_distribution<int> choice;
+    void AccessSplay(s* x);
+public:
+    Scheme3_3Rot(int p = 1 << 1, bool invert = false) : ThreeRotSplayTree() {
+        choice = uniform_int_distribution<int>(0,p-1);
+        this->invert = invert;
+    }
+};
+
+
+class Scheme3_1Rot : public OneRotSplayTree
+{
+    default_random_engine generator;
+    uniform_int_distribution<int> choice;
+    void AccessSplay(s* x);
+public:
+    Scheme3_1Rot(int p = 1 << 1, bool invert = false) : OneRotSplayTree() {
+        choice = uniform_int_distribution<int>(0,p-1);
+        this->invert = invert;
+    }
+};
+
+
 
 // Uncomment ONLY the ones you want to implement
 class TemplateSplayTree : public SplayTree

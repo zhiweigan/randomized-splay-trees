@@ -83,6 +83,9 @@
 		<Unit filename="/Users/zhiweigan/Documents/randomized-splay-trees/main.cpp">
 			<Option target="randomized_splay_trees"/>
 		</Unit>
+		<Unit filename="/Users/zhiweigan/Documents/randomized-splay-trees/tests/alternatingDepthN.cpp">
+			<Option target="randomized_splay_trees"/>
+		</Unit>
 		<Unit filename="/Users/zhiweigan/Documents/randomized-splay-trees/tests/justone.cpp">
 			<Option target="randomized_splay_trees"/>
 		</Unit>
@@ -107,6 +110,12 @@
 		<Unit filename="/Users/zhiweigan/Documents/randomized-splay-trees/trees/kRotScheme.cpp">
 			<Option target="randomized_splay_trees"/>
 		</Unit>
+		<Unit filename="/Users/zhiweigan/Documents/randomized-splay-trees/trees/kRotScheme2.cpp">
+			<Option target="randomized_splay_trees"/>
+		</Unit>
+		<Unit filename="/Users/zhiweigan/Documents/randomized-splay-trees/trees/kRotScheme3.cpp">
+			<Option target="randomized_splay_trees"/>
+		</Unit>
 		<Unit filename="/Users/zhiweigan/Documents/randomized-splay-trees/trees/probabilisticKRot.cpp">
 			<Option target="randomized_splay_trees"/>
 		</Unit>
@@ -117,6 +126,9 @@
 			<Option target="randomized_splay_trees"/>
 		</Unit>
 		<Unit filename="/Users/zhiweigan/Documents/randomized-splay-trees/trees/scheme2.cpp">
+			<Option target="randomized_splay_trees"/>
+		</Unit>
+		<Unit filename="/Users/zhiweigan/Documents/randomized-splay-trees/trees/scheme3.cpp">
 			<Option target="randomized_splay_trees"/>
 		</Unit>
 		<Unit filename="/Users/zhiweigan/Documents/randomized-splay-trees/trees/template.cpp">

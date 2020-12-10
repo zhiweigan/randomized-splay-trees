@@ -170,6 +170,33 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+tests/alternatingDepthN.o: tests/alternatingDepthN.cpp.o
+
+.PHONY : tests/alternatingDepthN.o
+
+# target to build an object file
+tests/alternatingDepthN.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/tests/alternatingDepthN.cpp.o
+.PHONY : tests/alternatingDepthN.cpp.o
+
+tests/alternatingDepthN.i: tests/alternatingDepthN.cpp.i
+
+.PHONY : tests/alternatingDepthN.i
+
+# target to preprocess a source file
+tests/alternatingDepthN.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/tests/alternatingDepthN.cpp.i
+.PHONY : tests/alternatingDepthN.cpp.i
+
+tests/alternatingDepthN.s: tests/alternatingDepthN.cpp.s
+
+.PHONY : tests/alternatingDepthN.s
+
+# target to generate assembly for a file
+tests/alternatingDepthN.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/tests/alternatingDepthN.cpp.s
+.PHONY : tests/alternatingDepthN.cpp.s
+
 tests/justone.o: tests/justone.cpp.o
 
 .PHONY : tests/justone.o
@@ -359,6 +386,60 @@ trees/kRotScheme.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/kRotScheme.cpp.s
 .PHONY : trees/kRotScheme.cpp.s
 
+trees/kRotScheme2.o: trees/kRotScheme2.cpp.o
+
+.PHONY : trees/kRotScheme2.o
+
+# target to build an object file
+trees/kRotScheme2.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/kRotScheme2.cpp.o
+.PHONY : trees/kRotScheme2.cpp.o
+
+trees/kRotScheme2.i: trees/kRotScheme2.cpp.i
+
+.PHONY : trees/kRotScheme2.i
+
+# target to preprocess a source file
+trees/kRotScheme2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/kRotScheme2.cpp.i
+.PHONY : trees/kRotScheme2.cpp.i
+
+trees/kRotScheme2.s: trees/kRotScheme2.cpp.s
+
+.PHONY : trees/kRotScheme2.s
+
+# target to generate assembly for a file
+trees/kRotScheme2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/kRotScheme2.cpp.s
+.PHONY : trees/kRotScheme2.cpp.s
+
+trees/kRotScheme3.o: trees/kRotScheme3.cpp.o
+
+.PHONY : trees/kRotScheme3.o
+
+# target to build an object file
+trees/kRotScheme3.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/kRotScheme3.cpp.o
+.PHONY : trees/kRotScheme3.cpp.o
+
+trees/kRotScheme3.i: trees/kRotScheme3.cpp.i
+
+.PHONY : trees/kRotScheme3.i
+
+# target to preprocess a source file
+trees/kRotScheme3.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/kRotScheme3.cpp.i
+.PHONY : trees/kRotScheme3.cpp.i
+
+trees/kRotScheme3.s: trees/kRotScheme3.cpp.s
+
+.PHONY : trees/kRotScheme3.s
+
+# target to generate assembly for a file
+trees/kRotScheme3.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/kRotScheme3.cpp.s
+.PHONY : trees/kRotScheme3.cpp.s
+
 trees/probabilisticKRot.o: trees/probabilisticKRot.cpp.o
 
 .PHONY : trees/probabilisticKRot.o
@@ -467,6 +548,33 @@ trees/scheme2.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/scheme2.cpp.s
 .PHONY : trees/scheme2.cpp.s
 
+trees/scheme3.o: trees/scheme3.cpp.o
+
+.PHONY : trees/scheme3.o
+
+# target to build an object file
+trees/scheme3.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/scheme3.cpp.o
+.PHONY : trees/scheme3.cpp.o
+
+trees/scheme3.i: trees/scheme3.cpp.i
+
+.PHONY : trees/scheme3.i
+
+# target to preprocess a source file
+trees/scheme3.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/scheme3.cpp.i
+.PHONY : trees/scheme3.cpp.i
+
+trees/scheme3.s: trees/scheme3.cpp.s
+
+.PHONY : trees/scheme3.s
+
+# target to generate assembly for a file
+trees/scheme3.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/scheme3.cpp.s
+.PHONY : trees/scheme3.cpp.s
+
 trees/template.o: trees/template.cpp.o
 
 .PHONY : trees/template.o
@@ -533,6 +641,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... tests/alternatingDepthN.o"
+	@echo "... tests/alternatingDepthN.i"
+	@echo "... tests/alternatingDepthN.s"
 	@echo "... tests/justone.o"
 	@echo "... tests/justone.i"
 	@echo "... tests/justone.s"
@@ -554,6 +665,12 @@ help:
 	@echo "... trees/kRotScheme.o"
 	@echo "... trees/kRotScheme.i"
 	@echo "... trees/kRotScheme.s"
+	@echo "... trees/kRotScheme2.o"
+	@echo "... trees/kRotScheme2.i"
+	@echo "... trees/kRotScheme2.s"
+	@echo "... trees/kRotScheme3.o"
+	@echo "... trees/kRotScheme3.i"
+	@echo "... trees/kRotScheme3.s"
 	@echo "... trees/probabilisticKRot.o"
 	@echo "... trees/probabilisticKRot.i"
 	@echo "... trees/probabilisticKRot.s"
@@ -566,6 +683,9 @@ help:
 	@echo "... trees/scheme2.o"
 	@echo "... trees/scheme2.i"
 	@echo "... trees/scheme2.s"
+	@echo "... trees/scheme3.o"
+	@echo "... trees/scheme3.i"
+	@echo "... trees/scheme3.s"
 	@echo "... trees/template.o"
 	@echo "... trees/template.i"
 	@echo "... trees/template.s"

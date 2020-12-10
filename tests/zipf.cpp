@@ -5,6 +5,19 @@
 #include "tests.h"
 using namespace std;
 
+vector<int> ZipfTest::Insert(int n, SplayTree* tree) {
+    default_random_engine generator;
+    vector<int> toInsert;
+    for(int i = 0; i < n; i++){
+        toInsert.push_back(i);
+    }
+    shuffle(toInsert.begin(), toInsert.end(), generator);
+    for(int i = 0; i < n; i++){
+        tree->Insert(toInsert[i]);
+    }
+    return toInsert;
+}
+
 void ZipfTest::Access(int n, SplayTree* tree, vector<double>* dist) { // Inserts n items between 1 to n at random
     default_random_engine generator;
     discrete_distribution<int> distribution(dist->begin(), dist->end());
@@ -14,56 +27,35 @@ void ZipfTest::Access(int n, SplayTree* tree, vector<double>* dist) { // Inserts
     }
 }
 
-vector<double> ZipfTest::MakeDist(int N, double zipfS) {
-    vector<double> distribution;
+vector<double> ZipfTest::MakeDist(int N, double zipfS, vector<int> inserted) {
+    vector<double> distribution(N);
     double denominator = 0;
     for (int n = 1; n <= N; n++){
         denominator += 1.0 / pow(n, zipfS);
     }
     for (int k = 1; k <= N; k++){
         double numerator = 1.0 / pow(k, zipfS);
-        distribution.push_back(numerator/denominator);
+        distribution[inserted[k-1]] = numerator/denominator;
     }
     return distribution;
 }
 
-void ZipfTest::RunOnTrees(map<string, SplayTree*>* trees) {
-    int trials[4] = {1000, 10000, 100000, 1000000};
+map<string, result> ZipfTest::RunOnTrees(map<string, SplayTree*>* trees) {
 
     cout<<"Testing ZipfTest"<<endl;
-    VariadicTable<string, string, string, string, string> vt({"Tree Type",
-                                                              "N",
-                                                              "Insert Only [ms]",
-                                                              "Access Only [ms]",
-                                                              "Delete Only [ms]"
-                                                             },
-                                                             10);
+    map<string, result> out;
 
     for(pair<string, SplayTree*> tree : *trees){
-        vt.addRow(tree.first, "", "", "", "");
         SplayTree* t = tree.second;
-        for(int trial : trials){
-            vector<double> dist = MakeDist(trial, 1.07);
-            t->resetCount();
-            this->Insert(trial, tree.second);
-            string insert = to_string(t->rotationCount) + " "
-                            + to_string(t->followedPointers) + " "
-                            + to_string((int)((double)(t->rotationCount) * 2.3 + t->followedPointers));
 
-            t->resetCount();
-            this->Access(trial, tree.second, &dist);
-            string access = to_string(t->rotationCount) + " "
-                            + to_string(t->followedPointers) + " "
-                            + to_string((int)((double)(t->rotationCount) * 2.3 + t->followedPointers));
+        vector<int> inserted = this->Insert(trial, tree.second);
+        vector<double> dist = MakeDist(trial, 1.07, inserted);
 
-            t->resetCount();
-            this->Delete(trial, tree.second);
-            string del = to_string(t->rotationCount) + " "
-                         + to_string(t->followedPointers) + " "
-                         + to_string((int)((double)(t->rotationCount) * 2.3 + t->followedPointers));
+        t->resetCount();
+        this->Access(trial, tree.second, &dist);
+        out.insert(make_pair(tree.first, result(t->rotationCount, t->followedPointers)));
 
-            vt.addRow("", to_string(trial), insert, access, del);
-        }
+        this->Delete(trial, tree.second);
     }
-    vt.print(std::cout);
+    return out;
 }
