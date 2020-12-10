@@ -22,38 +22,77 @@ void SplayLineTest::Delete(int n, SplayTree* tree) { // Inserts n items between 
     }
 }
 
-void SplayLineTest::Access(int n, SplayTree* tree) { // Inserts n items between 1 to n at random
-    for(int i = 0; i < n; i++){
-        tree->Search(n-i-1);
-    }
-}
+int getMaxDepth(s* node, int curDepth) {
+    int distance[1000005] = {0};
+    queue<s*> q;
+    q.push(node);
 
-void SplayLineTest::RunOnTrees(map<string, SplayTree*>* trees) {
-    int trials[4] = {100, 10000, 100000, 1000000};
+    while(!q.empty()){
+        s* n = q.front();
+        q.pop();
 
-    cout<<"Testing SplayLineTest"<<endl;
-    VariadicTable<string, string, string> vt({"Tree Type",
-                                                              "N",
-                                                              "Access Only [ms]",
-                                                             },
-                                                             10);
-
-    for(pair<string, SplayTree*> tree : *trees){
-        vt.addRow(tree.first, "", "");
-        SplayTree* t = tree.second;
-        for(int trial : trials){
-            this->Insert(trial, tree.second);
-
-            t->resetCount();
-            this->Access(trial, tree.second);
-            string access = to_string(t->rotationCount) + " "
-                            + to_string(t->followedPointers) + " "
-                            + to_string((int)((double)(t->rotationCount) * 2.3 + t->followedPointers));
-
-            this->Delete(trial, tree.second);
-
-            vt.addRow("", to_string(trial), access);
+        if (n->left) {
+            distance[n->left->key] = distance[n->key] + 1;
+            q.push(n->left);
+        }
+        if (n->right){
+            distance[n->right->key] = distance[n->key] + 1;
+            q.push(n->right);
         }
     }
-    vt.print(std::cout);
+    int maxdepth = 0;
+    for(int i = 0; i < 1000005; i++){
+        if (distance[i] > maxdepth){
+            maxdepth = distance[i];
+        }
+    }
+
+    return maxdepth;
+}
+
+vector<pair<int, int>> SplayLineTest::Access(int n, SplayTree* tree, bool check) { // Inserts n items between 1 to n at random
+    vector<pair<int, int>> depth;
+    for(int i = 0; i < n; i++){
+        if (i % n/20 == 0 && check) {
+            int d = getMaxDepth(tree->root, 1);
+            depth.push_back(make_pair(i, d));
+        }
+        tree->Search(n-i-1);
+    }
+    return depth;
+}
+
+map<string, result> SplayLineTest::RunOnTrees(map<string, SplayTree*>* trees) {
+
+    cout<<"Testing SplayLineTest"<<endl;
+    map<string, result> out;
+    for(pair<string, SplayTree*> tree : *trees){
+        //cout<<tree.first<<endl;
+        SplayTree* t = tree.second;
+        if (tree.first.find("BST") != string::npos
+            || tree.first.find("1-") != string::npos
+             || tree.first.find("d-1") != string::npos
+             || tree.first.find("3b: III-Rand-2, 0") != string::npos
+            ){
+            if (trial > 5000) {
+                out.insert(make_pair(tree.first, result(0, 0)));
+                continue;
+            }
+        }
+
+        this->Insert(trial, tree.second);
+
+        t->resetCount();
+        bool check = tree.first.find("d-4") != string::npos || tree.first.find("Splay") != string::npos;
+//        bool check = false;
+        vector<pair<int, int>> depth = this->Access(trial, tree.second, check);
+        out.insert(make_pair(tree.first, result(t->rotationCount, t->followedPointers)));
+
+        for(int i = 0; i < depth.size(); i++){
+            cout<<"("<<depth[i].first<<", "<<depth[i].second<<") ";
+        }
+
+        this->Delete(trial, tree.second);
+    }
+    return out;
 }

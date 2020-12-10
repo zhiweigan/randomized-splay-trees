@@ -6,6 +6,11 @@ CMakeFiles/randomized_splay_trees.dir/main.cpp.o: ../tests/VariadicTable.h
 CMakeFiles/randomized_splay_trees.dir/main.cpp.o: ../tests/tests.h
 CMakeFiles/randomized_splay_trees.dir/main.cpp.o: ../trees/trees.h
 
+CMakeFiles/randomized_splay_trees.dir/tests/alternatingDepthN.cpp.o: ../tests/VariadicTable.h
+CMakeFiles/randomized_splay_trees.dir/tests/alternatingDepthN.cpp.o: ../tests/alternatingDepthN.cpp
+CMakeFiles/randomized_splay_trees.dir/tests/alternatingDepthN.cpp.o: ../tests/tests.h
+CMakeFiles/randomized_splay_trees.dir/tests/alternatingDepthN.cpp.o: ../trees/trees.h
+
 CMakeFiles/randomized_splay_trees.dir/tests/justone.cpp.o: ../tests/VariadicTable.h
 CMakeFiles/randomized_splay_trees.dir/tests/justone.cpp.o: ../tests/justone.cpp
 CMakeFiles/randomized_splay_trees.dir/tests/justone.cpp.o: ../tests/tests.h
@@ -37,6 +42,12 @@ CMakeFiles/randomized_splay_trees.dir/trees/evenScheme.cpp.o: ../trees/trees.h
 CMakeFiles/randomized_splay_trees.dir/trees/kRotScheme.cpp.o: ../trees/kRotScheme.cpp
 CMakeFiles/randomized_splay_trees.dir/trees/kRotScheme.cpp.o: ../trees/trees.h
 
+CMakeFiles/randomized_splay_trees.dir/trees/kRotScheme2.cpp.o: ../trees/kRotScheme2.cpp
+CMakeFiles/randomized_splay_trees.dir/trees/kRotScheme2.cpp.o: ../trees/trees.h
+
+CMakeFiles/randomized_splay_trees.dir/trees/kRotScheme3.cpp.o: ../trees/kRotScheme3.cpp
+CMakeFiles/randomized_splay_trees.dir/trees/kRotScheme3.cpp.o: ../trees/trees.h
+
 CMakeFiles/randomized_splay_trees.dir/trees/probabilisticKRot.cpp.o: ../trees/probabilisticKRot.cpp
 CMakeFiles/randomized_splay_trees.dir/trees/probabilisticKRot.cpp.o: ../trees/trees.h
 
@@ -48,6 +59,9 @@ CMakeFiles/randomized_splay_trees.dir/trees/scheme1.cpp.o: ../trees/trees.h
 
 CMakeFiles/randomized_splay_trees.dir/trees/scheme2.cpp.o: ../trees/scheme2.cpp
 CMakeFiles/randomized_splay_trees.dir/trees/scheme2.cpp.o: ../trees/trees.h
+
+CMakeFiles/randomized_splay_trees.dir/trees/scheme3.cpp.o: ../trees/scheme3.cpp
+CMakeFiles/randomized_splay_trees.dir/trees/scheme3.cpp.o: ../trees/trees.h
 
 CMakeFiles/randomized_splay_trees.dir/trees/template.cpp.o: ../trees/template.cpp
 CMakeFiles/randomized_splay_trees.dir/trees/template.cpp.o: ../trees/trees.h

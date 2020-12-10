@@ -259,6 +259,58 @@ CMakeFiles/randomized_splay_trees.dir/trees/evenScheme.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/randomized_splay_trees.dir/trees/evenScheme.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhiweigan/Documents/randomized-splay-trees/trees/evenScheme.cpp -o CMakeFiles/randomized_splay_trees.dir/trees/evenScheme.cpp.s
 
+CMakeFiles/randomized_splay_trees.dir/trees/scheme3.cpp.o: CMakeFiles/randomized_splay_trees.dir/flags.make
+CMakeFiles/randomized_splay_trees.dir/trees/scheme3.cpp.o: ../trees/scheme3.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zhiweigan/Documents/randomized-splay-trees/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/randomized_splay_trees.dir/trees/scheme3.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/randomized_splay_trees.dir/trees/scheme3.cpp.o -c /Users/zhiweigan/Documents/randomized-splay-trees/trees/scheme3.cpp
+
+CMakeFiles/randomized_splay_trees.dir/trees/scheme3.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/randomized_splay_trees.dir/trees/scheme3.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zhiweigan/Documents/randomized-splay-trees/trees/scheme3.cpp > CMakeFiles/randomized_splay_trees.dir/trees/scheme3.cpp.i
+
+CMakeFiles/randomized_splay_trees.dir/trees/scheme3.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/randomized_splay_trees.dir/trees/scheme3.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhiweigan/Documents/randomized-splay-trees/trees/scheme3.cpp -o CMakeFiles/randomized_splay_trees.dir/trees/scheme3.cpp.s
+
+CMakeFiles/randomized_splay_trees.dir/trees/kRotScheme2.cpp.o: CMakeFiles/randomized_splay_trees.dir/flags.make
+CMakeFiles/randomized_splay_trees.dir/trees/kRotScheme2.cpp.o: ../trees/kRotScheme2.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zhiweigan/Documents/randomized-splay-trees/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/randomized_splay_trees.dir/trees/kRotScheme2.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/randomized_splay_trees.dir/trees/kRotScheme2.cpp.o -c /Users/zhiweigan/Documents/randomized-splay-trees/trees/kRotScheme2.cpp
+
+CMakeFiles/randomized_splay_trees.dir/trees/kRotScheme2.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/randomized_splay_trees.dir/trees/kRotScheme2.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zhiweigan/Documents/randomized-splay-trees/trees/kRotScheme2.cpp > CMakeFiles/randomized_splay_trees.dir/trees/kRotScheme2.cpp.i
+
+CMakeFiles/randomized_splay_trees.dir/trees/kRotScheme2.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/randomized_splay_trees.dir/trees/kRotScheme2.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhiweigan/Documents/randomized-splay-trees/trees/kRotScheme2.cpp -o CMakeFiles/randomized_splay_trees.dir/trees/kRotScheme2.cpp.s
+
+CMakeFiles/randomized_splay_trees.dir/trees/kRotScheme3.cpp.o: CMakeFiles/randomized_splay_trees.dir/flags.make
+CMakeFiles/randomized_splay_trees.dir/trees/kRotScheme3.cpp.o: ../trees/kRotScheme3.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zhiweigan/Documents/randomized-splay-trees/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/randomized_splay_trees.dir/trees/kRotScheme3.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/randomized_splay_trees.dir/trees/kRotScheme3.cpp.o -c /Users/zhiweigan/Documents/randomized-splay-trees/trees/kRotScheme3.cpp
+
+CMakeFiles/randomized_splay_trees.dir/trees/kRotScheme3.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/randomized_splay_trees.dir/trees/kRotScheme3.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zhiweigan/Documents/randomized-splay-trees/trees/kRotScheme3.cpp > CMakeFiles/randomized_splay_trees.dir/trees/kRotScheme3.cpp.i
+
+CMakeFiles/randomized_splay_trees.dir/trees/kRotScheme3.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/randomized_splay_trees.dir/trees/kRotScheme3.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhiweigan/Documents/randomized-splay-trees/trees/kRotScheme3.cpp -o CMakeFiles/randomized_splay_trees.dir/trees/kRotScheme3.cpp.s
+
+CMakeFiles/randomized_splay_trees.dir/tests/alternatingDepthN.cpp.o: CMakeFiles/randomized_splay_trees.dir/flags.make
+CMakeFiles/randomized_splay_trees.dir/tests/alternatingDepthN.cpp.o: ../tests/alternatingDepthN.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zhiweigan/Documents/randomized-splay-trees/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/randomized_splay_trees.dir/tests/alternatingDepthN.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/randomized_splay_trees.dir/tests/alternatingDepthN.cpp.o -c /Users/zhiweigan/Documents/randomized-splay-trees/tests/alternatingDepthN.cpp
+
+CMakeFiles/randomized_splay_trees.dir/tests/alternatingDepthN.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/randomized_splay_trees.dir/tests/alternatingDepthN.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zhiweigan/Documents/randomized-splay-trees/tests/alternatingDepthN.cpp > CMakeFiles/randomized_splay_trees.dir/tests/alternatingDepthN.cpp.i
+
+CMakeFiles/randomized_splay_trees.dir/tests/alternatingDepthN.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/randomized_splay_trees.dir/tests/alternatingDepthN.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhiweigan/Documents/randomized-splay-trees/tests/alternatingDepthN.cpp -o CMakeFiles/randomized_splay_trees.dir/tests/alternatingDepthN.cpp.s
+
 # Object files for target randomized_splay_trees
 randomized_splay_trees_OBJECTS = \
 "CMakeFiles/randomized_splay_trees.dir/main.cpp.o" \
@@ -274,7 +326,11 @@ randomized_splay_trees_OBJECTS = \
 "CMakeFiles/randomized_splay_trees.dir/tests/splayline.cpp.o" \
 "CMakeFiles/randomized_splay_trees.dir/trees/probabilisticKRot.cpp.o" \
 "CMakeFiles/randomized_splay_trees.dir/trees/kRotScheme.cpp.o" \
-"CMakeFiles/randomized_splay_trees.dir/trees/evenScheme.cpp.o"
+"CMakeFiles/randomized_splay_trees.dir/trees/evenScheme.cpp.o" \
+"CMakeFiles/randomized_splay_trees.dir/trees/scheme3.cpp.o" \
+"CMakeFiles/randomized_splay_trees.dir/trees/kRotScheme2.cpp.o" \
+"CMakeFiles/randomized_splay_trees.dir/trees/kRotScheme3.cpp.o" \
+"CMakeFiles/randomized_splay_trees.dir/tests/alternatingDepthN.cpp.o"
 
 # External object files for target randomized_splay_trees
 randomized_splay_trees_EXTERNAL_OBJECTS =
@@ -293,9 +349,13 @@ randomized_splay_trees: CMakeFiles/randomized_splay_trees.dir/tests/splayline.cp
 randomized_splay_trees: CMakeFiles/randomized_splay_trees.dir/trees/probabilisticKRot.cpp.o
 randomized_splay_trees: CMakeFiles/randomized_splay_trees.dir/trees/kRotScheme.cpp.o
 randomized_splay_trees: CMakeFiles/randomized_splay_trees.dir/trees/evenScheme.cpp.o
+randomized_splay_trees: CMakeFiles/randomized_splay_trees.dir/trees/scheme3.cpp.o
+randomized_splay_trees: CMakeFiles/randomized_splay_trees.dir/trees/kRotScheme2.cpp.o
+randomized_splay_trees: CMakeFiles/randomized_splay_trees.dir/trees/kRotScheme3.cpp.o
+randomized_splay_trees: CMakeFiles/randomized_splay_trees.dir/tests/alternatingDepthN.cpp.o
 randomized_splay_trees: CMakeFiles/randomized_splay_trees.dir/build.make
 randomized_splay_trees: CMakeFiles/randomized_splay_trees.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/zhiweigan/Documents/randomized-splay-trees/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable randomized_splay_trees"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/zhiweigan/Documents/randomized-splay-trees/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX executable randomized_splay_trees"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/randomized_splay_trees.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

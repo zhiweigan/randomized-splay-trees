@@ -4,7 +4,7 @@
 
 #include "trees.h"
 
-s* randomThreeRotSplayTree::Search(int key)
+s* Scheme1_3Rot::Search(int key)
 {
     s *z = root;
     while (z) {
@@ -13,14 +13,14 @@ s* randomThreeRotSplayTree::Search(int key)
         else if (key < z->key) z = z->left;
         else {
             int action = this->choice(this->generator);
-            if (action == 0) this->AccessSplay(z);
+            if ((action == 0) != this->invert) this->AccessSplay(z);
             return z;
         }
     }
     return nullptr;
 }
 
-s* randomOneRotSplayTree::Search(int key)
+s* Scheme1_1Rot::Search(int key)
 {
     s *z = root;
     while (z) {
@@ -29,14 +29,14 @@ s* randomOneRotSplayTree::Search(int key)
         else if (key < z->key) z = z->left;
         else {
             int action = this->choice(this->generator);
-            if (action == 0) this->AccessSplay(z);
+            if ((action == 0) != this->invert) this->AccessSplay(z);
             return z;
         }
     }
     return nullptr;
 }
 
-s* randomFourRotSplayTree::Search(int key)
+s* Scheme1_4Rot::Search(int key)
 {
     s *z = root;
     while (z) {
@@ -45,7 +45,8 @@ s* randomFourRotSplayTree::Search(int key)
         else if (key < z->key) z = z->left;
         else {
             int action = this->choice(this->generator);
-            if (action == 0) this->AccessSplay(z);
+            if ((action == 0) != this->invert) this->AccessSplay(z);
+
             return z;
         }
     }

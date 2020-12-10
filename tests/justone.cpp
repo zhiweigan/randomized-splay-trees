@@ -23,42 +23,36 @@ void OneTest::Access(int n, SplayTree* tree) {
     }
 }
 
-void OneTest::RunOnTrees(map<string, SplayTree*>* trees) {
-    int trials[2] = {100, 10000};
+map<string, result> OneTest::RunOnTrees(map<string, SplayTree*>* trees) {
 
     cout<<"Testing OneTest"<<endl;
-    VariadicTable<string, string, string, string, string> vt({"Tree Type",
-                                                              "N",
-                                                              "Insert Only [ms]",
-                                                              "Access Only [ms]",
-                                                              "Delete Only [ms]"
-                                                             },
-                                                             10);
 
+    map<string, result> out;
     for(pair<string, SplayTree*> tree : *trees){
-        vt.addRow(tree.first, "", "", "", "");
+        //cout<<tree.first<<endl;
         SplayTree* t = tree.second;
-        for(int trial : trials){
-            t->resetCount();
-            this->Insert(trial, tree.second);
-            string insert = to_string(t->rotationCount) + " "
-                            + to_string(t->followedPointers) + " "
-                            + to_string((int)((double)(t->rotationCount) * 2.3 + t->followedPointers));
-
-            t->resetCount();
-            this->Access(trial, tree.second);
-            string access = to_string(t->rotationCount) + " "
-                            + to_string(t->followedPointers) + " "
-                            + to_string((int)((double)(t->rotationCount) * 2.3 + t->followedPointers));
-
-            t->resetCount();
-            this->Delete(trial, tree.second);
-            string del = to_string(t->rotationCount) + " "
-                         + to_string(t->followedPointers) + " "
-                         + to_string((int)((double)(t->rotationCount) * 2.3 + t->followedPointers));
-
-            vt.addRow("", to_string(trial), insert, access, del);
+        if (tree.first.find("BST") != string::npos
+            || tree.first.find("1-") != string::npos
+             || tree.first.find("d-1") != string::npos
+                || tree.first.find("3b: III-Rand-2, 0") != string::npos
+            ){
+            if (trial > 5000) {
+                out.insert(make_pair(tree.first, result(0, 0)));
+                continue;
+            }
         }
+
+        this->Insert(trial, tree.second);
+//            string insert = to_string(t->rotationCount) + " "
+//                            + to_string(t->followedPointers) + " "
+//                            + to_string((int)((double)(t->rotationCount) * 2.3 + t->followedPointers));
+
+        t->resetCount();
+        this->Access(trial, tree.second);
+        out.insert(make_pair(tree.first, result(t->rotationCount, t->followedPointers)));
+
+        this->Delete(trial, tree.second);
     }
-    vt.print(std::cout);
+
+    return out;
 }
