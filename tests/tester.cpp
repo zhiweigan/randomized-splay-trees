@@ -99,18 +99,18 @@ Tester::Tester(){
     auto* lineTest = new SplayLineTest();
     auto* alternatingTest = new AlternatingDepthNTest();
     tests = new vector<Test*>();
-//    tests->push_back(randomTest);
-//    tests->push_back(zipfTest);
-//    tests->push_back(oneTest);
+    tests->push_back(randomTest);
+    tests->push_back(zipfTest);
+    tests->push_back(oneTest);
     tests->push_back(lineTest);
-//    tests->push_back(alternatingTest);
+    tests->push_back(alternatingTest);
 
     testNames = new vector<string>();
-//    testNames->push_back("1: Uniform");
-//    testNames->push_back("2: Zipf");
-//    testNames->push_back("3: Stack");
+    testNames->push_back("1: Uniform");
+    testNames->push_back("2: Zipf");
+    testNames->push_back("3: Stack");
     testNames->push_back("4: Line");
-//    testNames->push_back("5: Random Line");
+    testNames->push_back("5: Random Line");
 }
 
 //======================================================================================================================
@@ -131,10 +131,6 @@ map<string, map<string, result>> Tester::runAllTestsOnTreeSuite(string treeSuite
             tree.first.find(optionalSecond) != string::npos){
             treemap.insert(tree);
         }
-    }
-
-    for (pair<string, SplayTree*> tree : treemap){
-        cout<<tree.first<<endl;
     }
 
     for(int i = 0; i < tests->size(); i++) {

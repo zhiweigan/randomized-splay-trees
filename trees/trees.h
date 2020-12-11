@@ -29,23 +29,22 @@ class SplayTree
 public:
     virtual void L_Rotate(s* k2);
     virtual void R_Rotate(s* k2);
-    virtual void Splay(s* x);
     s* subtree_minimum(s *u);
     s* subtree_maximum(s *u);
     void replace(s *u, s *v);
     void printHelper(const std::string& prefix, const s* node, bool isLeft);
     unsigned long p_size;
-    int rotationCount = 0;
+    long long rotationCount = 0;
     int followedPointers = 0;
     SplayTree() : root(nullptr), p_size(0) { }
+    bool invert = false;
+    s* root;
     virtual void Insert(int key);
     virtual void Delete(int key);
-
+    virtual void Splay(s* x);
     virtual s* Search(int key);
     void prettyPrint();
     void resetCount();
-    s* root;
-    bool invert = false;
 };
 
 
@@ -212,7 +211,7 @@ private:
 public:
     Scheme3_2Rot(int p = 1 << 1, bool invert = false) : SplayTree() {
         choice = uniform_int_distribution<int>(0,p-1);
-        this->invert = invert;
+        this->invert = !invert;
     }
     s* Search(int key);
 };
@@ -225,7 +224,7 @@ class Scheme3_4Rot : public FourRotSplayTree
 public:
     Scheme3_4Rot(int p = 1 << 1, bool invert = false) : FourRotSplayTree() {
         choice = uniform_int_distribution<int>(0,p-1);
-        this->invert = invert;
+        this->invert = !invert;
     }
 };
 
@@ -237,7 +236,7 @@ class Scheme3_3Rot : public ThreeRotSplayTree
 public:
     Scheme3_3Rot(int p = 1 << 1, bool invert = false) : ThreeRotSplayTree() {
         choice = uniform_int_distribution<int>(0,p-1);
-        this->invert = invert;
+        this->invert = !invert;
     }
 };
 
@@ -250,24 +249,8 @@ class Scheme3_1Rot : public OneRotSplayTree
 public:
     Scheme3_1Rot(int p = 1 << 1, bool invert = false) : OneRotSplayTree() {
         choice = uniform_int_distribution<int>(0,p-1);
-        this->invert = invert;
+        this->invert = !invert;
     }
-};
-
-
-
-// Uncomment ONLY the ones you want to implement
-class TemplateSplayTree : public SplayTree
-{
-//private:
-//    s* RR_Rotate(s* k2);
-//    s* LL_Rotate(s* k2);
-//    s* Splay(int key, s* root);
-//    s* New_Node(int key);
-//public:
-//    s* Insert(int key, s* root);
-//    s* Delete(int key, s* root);
-//    s* Search(int key, s* root);
 };
 
 #endif //RANDOMIZED_SPLAY_TREES_TREES_H

@@ -1,0 +1,7 @@
+Trees |  II-Rand-1, 1 |  II-Rand-2, 1 |  II-Rand-3, 1 |  II-Rand-4, 1 
+--- | --- | --- | --- | --- 
+Uniform | 8.05e7 | 8.39e7 | 8.71e7 | 8.93e7
+Zipf | 4.41e7 | 4.61e7 | 4.81e7 | 4.97e7
+Stack | 3.80e6 | 3.80e6 | 3.80e6 | 3.80e6
+Line | TLE | 1.33e7 | 1.15e7 | 1.09e7
+Random Line | TLE | 1.93e7 | 1.80e7 | 1.80e7

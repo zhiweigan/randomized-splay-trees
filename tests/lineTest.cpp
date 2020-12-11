@@ -64,7 +64,7 @@ vector<pair<int, int>> SplayLineTest::Access(int n, SplayTree* tree, bool check)
 
 map<string, result> SplayLineTest::RunOnTrees(map<string, SplayTree*>* trees) {
 
-    cout<<"Testing SplayLineTest"<<endl;
+    cout<<"Testing Line"<<endl;
     map<string, result> out;
 
 
@@ -72,10 +72,10 @@ map<string, result> SplayLineTest::RunOnTrees(map<string, SplayTree*>* trees) {
         //cout<<tree.first<<endl;
         SplayTree* t = tree.second;
         if (tree.first.find("BST") != string::npos
-            || tree.first.find("1-") != string::npos
-             || tree.first.find("d-1") != string::npos
-             || tree.first.find("3b: III-Rand-2, 0") != string::npos
-            ){
+        || tree.first.find("1-") != string::npos
+        || tree.first.find("d-1") != string::npos
+        || tree.first.find("3b: III-Rand-2, 0") != string::npos
+        ){
             if (trial > 5000) {
                 out.insert(make_pair(tree.first, result(0, 0)));
                 continue;
@@ -85,16 +85,18 @@ map<string, result> SplayLineTest::RunOnTrees(map<string, SplayTree*>* trees) {
         this->Insert(trial, tree.second);
 
         t->resetCount();
-        bool check = tree.first.find("d-2") != string::npos || tree.first.find("Splay") != string::npos;
-//        bool check = true;
+        // Uncomment these lines to get max depth calculations
+
+//        bool check = tree.first.find("d-2") != string::npos || tree.first.find("Splay") != string::npos;
+        bool check = false;
         vector<pair<int, int>> depth = this->Access(trial, tree.second, check);
         out.insert(make_pair(tree.first, result(t->rotationCount, t->followedPointers)));
 
-        cout<<tree.first<<endl;
-        for(int i = 0; i < depth.size(); i++){
-            cout<<"("<<depth[i].first<<", "<<depth[i].second<<") ";
-        }
-        cout<<endl;
+//        cout<<tree.first<<endl;
+//        for(int i = 0; i < depth.size(); i++){
+//            cout<<"("<<depth[i].first<<", "<<depth[i].second<<") ";
+//        }
+//        cout<<endl;
 
         this->Delete(trial, tree.second);
     }

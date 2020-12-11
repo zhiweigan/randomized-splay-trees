@@ -83,16 +83,16 @@
 		<Unit filename="/Users/zhiweigan/Documents/randomized-splay-trees/main.cpp">
 			<Option target="randomized_splay_trees"/>
 		</Unit>
-		<Unit filename="/Users/zhiweigan/Documents/randomized-splay-trees/tests/alternatingDepthN.cpp">
+		<Unit filename="/Users/zhiweigan/Documents/randomized-splay-trees/scientific.h">
 			<Option target="randomized_splay_trees"/>
 		</Unit>
-		<Unit filename="/Users/zhiweigan/Documents/randomized-splay-trees/tests/justone.cpp">
+		<Unit filename="/Users/zhiweigan/Documents/randomized-splay-trees/tests/lineTest.cpp">
 			<Option target="randomized_splay_trees"/>
 		</Unit>
-		<Unit filename="/Users/zhiweigan/Documents/randomized-splay-trees/tests/random.cpp">
+		<Unit filename="/Users/zhiweigan/Documents/randomized-splay-trees/tests/randomLineTest.cpp">
 			<Option target="randomized_splay_trees"/>
 		</Unit>
-		<Unit filename="/Users/zhiweigan/Documents/randomized-splay-trees/tests/splayline.cpp">
+		<Unit filename="/Users/zhiweigan/Documents/randomized-splay-trees/tests/stackTest.cpp">
 			<Option target="randomized_splay_trees"/>
 		</Unit>
 		<Unit filename="/Users/zhiweigan/Documents/randomized-splay-trees/tests/tester.cpp">
@@ -101,13 +101,28 @@
 		<Unit filename="/Users/zhiweigan/Documents/randomized-splay-trees/tests/tests.h">
 			<Option target="randomized_splay_trees"/>
 		</Unit>
-		<Unit filename="/Users/zhiweigan/Documents/randomized-splay-trees/tests/zipf.cpp">
+		<Unit filename="/Users/zhiweigan/Documents/randomized-splay-trees/tests/uniformTest.cpp">
 			<Option target="randomized_splay_trees"/>
 		</Unit>
-		<Unit filename="/Users/zhiweigan/Documents/randomized-splay-trees/trees/evenScheme.cpp">
+		<Unit filename="/Users/zhiweigan/Documents/randomized-splay-trees/tests/zipfTest.cpp">
 			<Option target="randomized_splay_trees"/>
 		</Unit>
-		<Unit filename="/Users/zhiweigan/Documents/randomized-splay-trees/trees/kRotScheme.cpp">
+		<Unit filename="/Users/zhiweigan/Documents/randomized-splay-trees/trees/2RotScheme1.cpp">
+			<Option target="randomized_splay_trees"/>
+		</Unit>
+		<Unit filename="/Users/zhiweigan/Documents/randomized-splay-trees/trees/2RotScheme2.cpp">
+			<Option target="randomized_splay_trees"/>
+		</Unit>
+		<Unit filename="/Users/zhiweigan/Documents/randomized-splay-trees/trees/2RotScheme3.cpp">
+			<Option target="randomized_splay_trees"/>
+		</Unit>
+		<Unit filename="/Users/zhiweigan/Documents/randomized-splay-trees/trees/even.cpp">
+			<Option target="randomized_splay_trees"/>
+		</Unit>
+		<Unit filename="/Users/zhiweigan/Documents/randomized-splay-trees/trees/kRotDeterministic.cpp">
+			<Option target="randomized_splay_trees"/>
+		</Unit>
+		<Unit filename="/Users/zhiweigan/Documents/randomized-splay-trees/trees/kRotScheme1.cpp">
 			<Option target="randomized_splay_trees"/>
 		</Unit>
 		<Unit filename="/Users/zhiweigan/Documents/randomized-splay-trees/trees/kRotScheme2.cpp">
@@ -116,28 +131,13 @@
 		<Unit filename="/Users/zhiweigan/Documents/randomized-splay-trees/trees/kRotScheme3.cpp">
 			<Option target="randomized_splay_trees"/>
 		</Unit>
-		<Unit filename="/Users/zhiweigan/Documents/randomized-splay-trees/trees/probabilisticKRot.cpp">
-			<Option target="randomized_splay_trees"/>
-		</Unit>
 		<Unit filename="/Users/zhiweigan/Documents/randomized-splay-trees/trees/regularBST.cpp">
 			<Option target="randomized_splay_trees"/>
 		</Unit>
-		<Unit filename="/Users/zhiweigan/Documents/randomized-splay-trees/trees/scheme1.cpp">
-			<Option target="randomized_splay_trees"/>
-		</Unit>
-		<Unit filename="/Users/zhiweigan/Documents/randomized-splay-trees/trees/scheme2.cpp">
-			<Option target="randomized_splay_trees"/>
-		</Unit>
-		<Unit filename="/Users/zhiweigan/Documents/randomized-splay-trees/trees/scheme3.cpp">
-			<Option target="randomized_splay_trees"/>
-		</Unit>
-		<Unit filename="/Users/zhiweigan/Documents/randomized-splay-trees/trees/template.cpp">
+		<Unit filename="/Users/zhiweigan/Documents/randomized-splay-trees/trees/splay.cpp">
 			<Option target="randomized_splay_trees"/>
 		</Unit>
 		<Unit filename="/Users/zhiweigan/Documents/randomized-splay-trees/trees/trees.h">
-			<Option target="randomized_splay_trees"/>
-		</Unit>
-		<Unit filename="/Users/zhiweigan/Documents/randomized-splay-trees/trees/vanilla.cpp">
 			<Option target="randomized_splay_trees"/>
 		</Unit>
 		<Unit filename="/Users/zhiweigan/Documents/randomized-splay-trees/CMakeLists.txt">

@@ -170,113 +170,86 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-tests/alternatingDepthN.o: tests/alternatingDepthN.cpp.o
+tests/lineTest.o: tests/lineTest.cpp.o
 
-.PHONY : tests/alternatingDepthN.o
-
-# target to build an object file
-tests/alternatingDepthN.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/tests/alternatingDepthN.cpp.o
-.PHONY : tests/alternatingDepthN.cpp.o
-
-tests/alternatingDepthN.i: tests/alternatingDepthN.cpp.i
-
-.PHONY : tests/alternatingDepthN.i
-
-# target to preprocess a source file
-tests/alternatingDepthN.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/tests/alternatingDepthN.cpp.i
-.PHONY : tests/alternatingDepthN.cpp.i
-
-tests/alternatingDepthN.s: tests/alternatingDepthN.cpp.s
-
-.PHONY : tests/alternatingDepthN.s
-
-# target to generate assembly for a file
-tests/alternatingDepthN.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/tests/alternatingDepthN.cpp.s
-.PHONY : tests/alternatingDepthN.cpp.s
-
-tests/justone.o: tests/justone.cpp.o
-
-.PHONY : tests/justone.o
+.PHONY : tests/lineTest.o
 
 # target to build an object file
-tests/justone.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/tests/justone.cpp.o
-.PHONY : tests/justone.cpp.o
+tests/lineTest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/tests/lineTest.cpp.o
+.PHONY : tests/lineTest.cpp.o
 
-tests/justone.i: tests/justone.cpp.i
+tests/lineTest.i: tests/lineTest.cpp.i
 
-.PHONY : tests/justone.i
+.PHONY : tests/lineTest.i
 
 # target to preprocess a source file
-tests/justone.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/tests/justone.cpp.i
-.PHONY : tests/justone.cpp.i
+tests/lineTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/tests/lineTest.cpp.i
+.PHONY : tests/lineTest.cpp.i
 
-tests/justone.s: tests/justone.cpp.s
+tests/lineTest.s: tests/lineTest.cpp.s
 
-.PHONY : tests/justone.s
+.PHONY : tests/lineTest.s
 
 # target to generate assembly for a file
-tests/justone.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/tests/justone.cpp.s
-.PHONY : tests/justone.cpp.s
+tests/lineTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/tests/lineTest.cpp.s
+.PHONY : tests/lineTest.cpp.s
 
-tests/random.o: tests/random.cpp.o
+tests/randomLineTest.o: tests/randomLineTest.cpp.o
 
-.PHONY : tests/random.o
+.PHONY : tests/randomLineTest.o
 
 # target to build an object file
-tests/random.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/tests/random.cpp.o
-.PHONY : tests/random.cpp.o
+tests/randomLineTest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/tests/randomLineTest.cpp.o
+.PHONY : tests/randomLineTest.cpp.o
 
-tests/random.i: tests/random.cpp.i
+tests/randomLineTest.i: tests/randomLineTest.cpp.i
 
-.PHONY : tests/random.i
+.PHONY : tests/randomLineTest.i
 
 # target to preprocess a source file
-tests/random.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/tests/random.cpp.i
-.PHONY : tests/random.cpp.i
+tests/randomLineTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/tests/randomLineTest.cpp.i
+.PHONY : tests/randomLineTest.cpp.i
 
-tests/random.s: tests/random.cpp.s
+tests/randomLineTest.s: tests/randomLineTest.cpp.s
 
-.PHONY : tests/random.s
+.PHONY : tests/randomLineTest.s
 
 # target to generate assembly for a file
-tests/random.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/tests/random.cpp.s
-.PHONY : tests/random.cpp.s
+tests/randomLineTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/tests/randomLineTest.cpp.s
+.PHONY : tests/randomLineTest.cpp.s
 
-tests/splayline.o: tests/splayline.cpp.o
+tests/stackTest.o: tests/stackTest.cpp.o
 
-.PHONY : tests/splayline.o
+.PHONY : tests/stackTest.o
 
 # target to build an object file
-tests/splayline.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/tests/splayline.cpp.o
-.PHONY : tests/splayline.cpp.o
+tests/stackTest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/tests/stackTest.cpp.o
+.PHONY : tests/stackTest.cpp.o
 
-tests/splayline.i: tests/splayline.cpp.i
+tests/stackTest.i: tests/stackTest.cpp.i
 
-.PHONY : tests/splayline.i
+.PHONY : tests/stackTest.i
 
 # target to preprocess a source file
-tests/splayline.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/tests/splayline.cpp.i
-.PHONY : tests/splayline.cpp.i
+tests/stackTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/tests/stackTest.cpp.i
+.PHONY : tests/stackTest.cpp.i
 
-tests/splayline.s: tests/splayline.cpp.s
+tests/stackTest.s: tests/stackTest.cpp.s
 
-.PHONY : tests/splayline.s
+.PHONY : tests/stackTest.s
 
 # target to generate assembly for a file
-tests/splayline.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/tests/splayline.cpp.s
-.PHONY : tests/splayline.cpp.s
+tests/stackTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/tests/stackTest.cpp.s
+.PHONY : tests/stackTest.cpp.s
 
 tests/tester.o: tests/tester.cpp.o
 
@@ -305,86 +278,221 @@ tests/tester.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/tests/tester.cpp.s
 .PHONY : tests/tester.cpp.s
 
-tests/zipf.o: tests/zipf.cpp.o
+tests/uniformTest.o: tests/uniformTest.cpp.o
 
-.PHONY : tests/zipf.o
-
-# target to build an object file
-tests/zipf.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/tests/zipf.cpp.o
-.PHONY : tests/zipf.cpp.o
-
-tests/zipf.i: tests/zipf.cpp.i
-
-.PHONY : tests/zipf.i
-
-# target to preprocess a source file
-tests/zipf.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/tests/zipf.cpp.i
-.PHONY : tests/zipf.cpp.i
-
-tests/zipf.s: tests/zipf.cpp.s
-
-.PHONY : tests/zipf.s
-
-# target to generate assembly for a file
-tests/zipf.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/tests/zipf.cpp.s
-.PHONY : tests/zipf.cpp.s
-
-trees/evenScheme.o: trees/evenScheme.cpp.o
-
-.PHONY : trees/evenScheme.o
+.PHONY : tests/uniformTest.o
 
 # target to build an object file
-trees/evenScheme.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/evenScheme.cpp.o
-.PHONY : trees/evenScheme.cpp.o
+tests/uniformTest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/tests/uniformTest.cpp.o
+.PHONY : tests/uniformTest.cpp.o
 
-trees/evenScheme.i: trees/evenScheme.cpp.i
+tests/uniformTest.i: tests/uniformTest.cpp.i
 
-.PHONY : trees/evenScheme.i
+.PHONY : tests/uniformTest.i
 
 # target to preprocess a source file
-trees/evenScheme.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/evenScheme.cpp.i
-.PHONY : trees/evenScheme.cpp.i
+tests/uniformTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/tests/uniformTest.cpp.i
+.PHONY : tests/uniformTest.cpp.i
 
-trees/evenScheme.s: trees/evenScheme.cpp.s
+tests/uniformTest.s: tests/uniformTest.cpp.s
 
-.PHONY : trees/evenScheme.s
+.PHONY : tests/uniformTest.s
 
 # target to generate assembly for a file
-trees/evenScheme.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/evenScheme.cpp.s
-.PHONY : trees/evenScheme.cpp.s
+tests/uniformTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/tests/uniformTest.cpp.s
+.PHONY : tests/uniformTest.cpp.s
 
-trees/kRotScheme.o: trees/kRotScheme.cpp.o
+tests/zipfTest.o: tests/zipfTest.cpp.o
 
-.PHONY : trees/kRotScheme.o
+.PHONY : tests/zipfTest.o
 
 # target to build an object file
-trees/kRotScheme.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/kRotScheme.cpp.o
-.PHONY : trees/kRotScheme.cpp.o
+tests/zipfTest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/tests/zipfTest.cpp.o
+.PHONY : tests/zipfTest.cpp.o
 
-trees/kRotScheme.i: trees/kRotScheme.cpp.i
+tests/zipfTest.i: tests/zipfTest.cpp.i
 
-.PHONY : trees/kRotScheme.i
+.PHONY : tests/zipfTest.i
 
 # target to preprocess a source file
-trees/kRotScheme.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/kRotScheme.cpp.i
-.PHONY : trees/kRotScheme.cpp.i
+tests/zipfTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/tests/zipfTest.cpp.i
+.PHONY : tests/zipfTest.cpp.i
 
-trees/kRotScheme.s: trees/kRotScheme.cpp.s
+tests/zipfTest.s: tests/zipfTest.cpp.s
 
-.PHONY : trees/kRotScheme.s
+.PHONY : tests/zipfTest.s
 
 # target to generate assembly for a file
-trees/kRotScheme.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/kRotScheme.cpp.s
-.PHONY : trees/kRotScheme.cpp.s
+tests/zipfTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/tests/zipfTest.cpp.s
+.PHONY : tests/zipfTest.cpp.s
+
+trees/2RotScheme1.o: trees/2RotScheme1.cpp.o
+
+.PHONY : trees/2RotScheme1.o
+
+# target to build an object file
+trees/2RotScheme1.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/2RotScheme1.cpp.o
+.PHONY : trees/2RotScheme1.cpp.o
+
+trees/2RotScheme1.i: trees/2RotScheme1.cpp.i
+
+.PHONY : trees/2RotScheme1.i
+
+# target to preprocess a source file
+trees/2RotScheme1.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/2RotScheme1.cpp.i
+.PHONY : trees/2RotScheme1.cpp.i
+
+trees/2RotScheme1.s: trees/2RotScheme1.cpp.s
+
+.PHONY : trees/2RotScheme1.s
+
+# target to generate assembly for a file
+trees/2RotScheme1.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/2RotScheme1.cpp.s
+.PHONY : trees/2RotScheme1.cpp.s
+
+trees/2RotScheme2.o: trees/2RotScheme2.cpp.o
+
+.PHONY : trees/2RotScheme2.o
+
+# target to build an object file
+trees/2RotScheme2.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/2RotScheme2.cpp.o
+.PHONY : trees/2RotScheme2.cpp.o
+
+trees/2RotScheme2.i: trees/2RotScheme2.cpp.i
+
+.PHONY : trees/2RotScheme2.i
+
+# target to preprocess a source file
+trees/2RotScheme2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/2RotScheme2.cpp.i
+.PHONY : trees/2RotScheme2.cpp.i
+
+trees/2RotScheme2.s: trees/2RotScheme2.cpp.s
+
+.PHONY : trees/2RotScheme2.s
+
+# target to generate assembly for a file
+trees/2RotScheme2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/2RotScheme2.cpp.s
+.PHONY : trees/2RotScheme2.cpp.s
+
+trees/2RotScheme3.o: trees/2RotScheme3.cpp.o
+
+.PHONY : trees/2RotScheme3.o
+
+# target to build an object file
+trees/2RotScheme3.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/2RotScheme3.cpp.o
+.PHONY : trees/2RotScheme3.cpp.o
+
+trees/2RotScheme3.i: trees/2RotScheme3.cpp.i
+
+.PHONY : trees/2RotScheme3.i
+
+# target to preprocess a source file
+trees/2RotScheme3.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/2RotScheme3.cpp.i
+.PHONY : trees/2RotScheme3.cpp.i
+
+trees/2RotScheme3.s: trees/2RotScheme3.cpp.s
+
+.PHONY : trees/2RotScheme3.s
+
+# target to generate assembly for a file
+trees/2RotScheme3.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/2RotScheme3.cpp.s
+.PHONY : trees/2RotScheme3.cpp.s
+
+trees/even.o: trees/even.cpp.o
+
+.PHONY : trees/even.o
+
+# target to build an object file
+trees/even.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/even.cpp.o
+.PHONY : trees/even.cpp.o
+
+trees/even.i: trees/even.cpp.i
+
+.PHONY : trees/even.i
+
+# target to preprocess a source file
+trees/even.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/even.cpp.i
+.PHONY : trees/even.cpp.i
+
+trees/even.s: trees/even.cpp.s
+
+.PHONY : trees/even.s
+
+# target to generate assembly for a file
+trees/even.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/even.cpp.s
+.PHONY : trees/even.cpp.s
+
+trees/kRotDeterministic.o: trees/kRotDeterministic.cpp.o
+
+.PHONY : trees/kRotDeterministic.o
+
+# target to build an object file
+trees/kRotDeterministic.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/kRotDeterministic.cpp.o
+.PHONY : trees/kRotDeterministic.cpp.o
+
+trees/kRotDeterministic.i: trees/kRotDeterministic.cpp.i
+
+.PHONY : trees/kRotDeterministic.i
+
+# target to preprocess a source file
+trees/kRotDeterministic.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/kRotDeterministic.cpp.i
+.PHONY : trees/kRotDeterministic.cpp.i
+
+trees/kRotDeterministic.s: trees/kRotDeterministic.cpp.s
+
+.PHONY : trees/kRotDeterministic.s
+
+# target to generate assembly for a file
+trees/kRotDeterministic.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/kRotDeterministic.cpp.s
+.PHONY : trees/kRotDeterministic.cpp.s
+
+trees/kRotScheme1.o: trees/kRotScheme1.cpp.o
+
+.PHONY : trees/kRotScheme1.o
+
+# target to build an object file
+trees/kRotScheme1.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/kRotScheme1.cpp.o
+.PHONY : trees/kRotScheme1.cpp.o
+
+trees/kRotScheme1.i: trees/kRotScheme1.cpp.i
+
+.PHONY : trees/kRotScheme1.i
+
+# target to preprocess a source file
+trees/kRotScheme1.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/kRotScheme1.cpp.i
+.PHONY : trees/kRotScheme1.cpp.i
+
+trees/kRotScheme1.s: trees/kRotScheme1.cpp.s
+
+.PHONY : trees/kRotScheme1.s
+
+# target to generate assembly for a file
+trees/kRotScheme1.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/kRotScheme1.cpp.s
+.PHONY : trees/kRotScheme1.cpp.s
 
 trees/kRotScheme2.o: trees/kRotScheme2.cpp.o
 
@@ -440,33 +548,6 @@ trees/kRotScheme3.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/kRotScheme3.cpp.s
 .PHONY : trees/kRotScheme3.cpp.s
 
-trees/probabilisticKRot.o: trees/probabilisticKRot.cpp.o
-
-.PHONY : trees/probabilisticKRot.o
-
-# target to build an object file
-trees/probabilisticKRot.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/probabilisticKRot.cpp.o
-.PHONY : trees/probabilisticKRot.cpp.o
-
-trees/probabilisticKRot.i: trees/probabilisticKRot.cpp.i
-
-.PHONY : trees/probabilisticKRot.i
-
-# target to preprocess a source file
-trees/probabilisticKRot.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/probabilisticKRot.cpp.i
-.PHONY : trees/probabilisticKRot.cpp.i
-
-trees/probabilisticKRot.s: trees/probabilisticKRot.cpp.s
-
-.PHONY : trees/probabilisticKRot.s
-
-# target to generate assembly for a file
-trees/probabilisticKRot.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/probabilisticKRot.cpp.s
-.PHONY : trees/probabilisticKRot.cpp.s
-
 trees/regularBST.o: trees/regularBST.cpp.o
 
 .PHONY : trees/regularBST.o
@@ -494,140 +575,32 @@ trees/regularBST.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/regularBST.cpp.s
 .PHONY : trees/regularBST.cpp.s
 
-trees/scheme1.o: trees/scheme1.cpp.o
+trees/splay.o: trees/splay.cpp.o
 
-.PHONY : trees/scheme1.o
-
-# target to build an object file
-trees/scheme1.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/scheme1.cpp.o
-.PHONY : trees/scheme1.cpp.o
-
-trees/scheme1.i: trees/scheme1.cpp.i
-
-.PHONY : trees/scheme1.i
-
-# target to preprocess a source file
-trees/scheme1.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/scheme1.cpp.i
-.PHONY : trees/scheme1.cpp.i
-
-trees/scheme1.s: trees/scheme1.cpp.s
-
-.PHONY : trees/scheme1.s
-
-# target to generate assembly for a file
-trees/scheme1.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/scheme1.cpp.s
-.PHONY : trees/scheme1.cpp.s
-
-trees/scheme2.o: trees/scheme2.cpp.o
-
-.PHONY : trees/scheme2.o
+.PHONY : trees/splay.o
 
 # target to build an object file
-trees/scheme2.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/scheme2.cpp.o
-.PHONY : trees/scheme2.cpp.o
+trees/splay.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/splay.cpp.o
+.PHONY : trees/splay.cpp.o
 
-trees/scheme2.i: trees/scheme2.cpp.i
+trees/splay.i: trees/splay.cpp.i
 
-.PHONY : trees/scheme2.i
-
-# target to preprocess a source file
-trees/scheme2.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/scheme2.cpp.i
-.PHONY : trees/scheme2.cpp.i
-
-trees/scheme2.s: trees/scheme2.cpp.s
-
-.PHONY : trees/scheme2.s
-
-# target to generate assembly for a file
-trees/scheme2.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/scheme2.cpp.s
-.PHONY : trees/scheme2.cpp.s
-
-trees/scheme3.o: trees/scheme3.cpp.o
-
-.PHONY : trees/scheme3.o
-
-# target to build an object file
-trees/scheme3.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/scheme3.cpp.o
-.PHONY : trees/scheme3.cpp.o
-
-trees/scheme3.i: trees/scheme3.cpp.i
-
-.PHONY : trees/scheme3.i
+.PHONY : trees/splay.i
 
 # target to preprocess a source file
-trees/scheme3.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/scheme3.cpp.i
-.PHONY : trees/scheme3.cpp.i
+trees/splay.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/splay.cpp.i
+.PHONY : trees/splay.cpp.i
 
-trees/scheme3.s: trees/scheme3.cpp.s
+trees/splay.s: trees/splay.cpp.s
 
-.PHONY : trees/scheme3.s
-
-# target to generate assembly for a file
-trees/scheme3.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/scheme3.cpp.s
-.PHONY : trees/scheme3.cpp.s
-
-trees/template.o: trees/template.cpp.o
-
-.PHONY : trees/template.o
-
-# target to build an object file
-trees/template.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/template.cpp.o
-.PHONY : trees/template.cpp.o
-
-trees/template.i: trees/template.cpp.i
-
-.PHONY : trees/template.i
-
-# target to preprocess a source file
-trees/template.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/template.cpp.i
-.PHONY : trees/template.cpp.i
-
-trees/template.s: trees/template.cpp.s
-
-.PHONY : trees/template.s
+.PHONY : trees/splay.s
 
 # target to generate assembly for a file
-trees/template.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/template.cpp.s
-.PHONY : trees/template.cpp.s
-
-trees/vanilla.o: trees/vanilla.cpp.o
-
-.PHONY : trees/vanilla.o
-
-# target to build an object file
-trees/vanilla.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/vanilla.cpp.o
-.PHONY : trees/vanilla.cpp.o
-
-trees/vanilla.i: trees/vanilla.cpp.i
-
-.PHONY : trees/vanilla.i
-
-# target to preprocess a source file
-trees/vanilla.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/vanilla.cpp.i
-.PHONY : trees/vanilla.cpp.i
-
-trees/vanilla.s: trees/vanilla.cpp.s
-
-.PHONY : trees/vanilla.s
-
-# target to generate assembly for a file
-trees/vanilla.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/vanilla.cpp.s
-.PHONY : trees/vanilla.cpp.s
+trees/splay.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomized_splay_trees.dir/build.make CMakeFiles/randomized_splay_trees.dir/trees/splay.cpp.s
+.PHONY : trees/splay.cpp.s
 
 # Help Target
 help:
@@ -641,57 +614,54 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... tests/alternatingDepthN.o"
-	@echo "... tests/alternatingDepthN.i"
-	@echo "... tests/alternatingDepthN.s"
-	@echo "... tests/justone.o"
-	@echo "... tests/justone.i"
-	@echo "... tests/justone.s"
-	@echo "... tests/random.o"
-	@echo "... tests/random.i"
-	@echo "... tests/random.s"
-	@echo "... tests/splayline.o"
-	@echo "... tests/splayline.i"
-	@echo "... tests/splayline.s"
+	@echo "... tests/lineTest.o"
+	@echo "... tests/lineTest.i"
+	@echo "... tests/lineTest.s"
+	@echo "... tests/randomLineTest.o"
+	@echo "... tests/randomLineTest.i"
+	@echo "... tests/randomLineTest.s"
+	@echo "... tests/stackTest.o"
+	@echo "... tests/stackTest.i"
+	@echo "... tests/stackTest.s"
 	@echo "... tests/tester.o"
 	@echo "... tests/tester.i"
 	@echo "... tests/tester.s"
-	@echo "... tests/zipf.o"
-	@echo "... tests/zipf.i"
-	@echo "... tests/zipf.s"
-	@echo "... trees/evenScheme.o"
-	@echo "... trees/evenScheme.i"
-	@echo "... trees/evenScheme.s"
-	@echo "... trees/kRotScheme.o"
-	@echo "... trees/kRotScheme.i"
-	@echo "... trees/kRotScheme.s"
+	@echo "... tests/uniformTest.o"
+	@echo "... tests/uniformTest.i"
+	@echo "... tests/uniformTest.s"
+	@echo "... tests/zipfTest.o"
+	@echo "... tests/zipfTest.i"
+	@echo "... tests/zipfTest.s"
+	@echo "... trees/2RotScheme1.o"
+	@echo "... trees/2RotScheme1.i"
+	@echo "... trees/2RotScheme1.s"
+	@echo "... trees/2RotScheme2.o"
+	@echo "... trees/2RotScheme2.i"
+	@echo "... trees/2RotScheme2.s"
+	@echo "... trees/2RotScheme3.o"
+	@echo "... trees/2RotScheme3.i"
+	@echo "... trees/2RotScheme3.s"
+	@echo "... trees/even.o"
+	@echo "... trees/even.i"
+	@echo "... trees/even.s"
+	@echo "... trees/kRotDeterministic.o"
+	@echo "... trees/kRotDeterministic.i"
+	@echo "... trees/kRotDeterministic.s"
+	@echo "... trees/kRotScheme1.o"
+	@echo "... trees/kRotScheme1.i"
+	@echo "... trees/kRotScheme1.s"
 	@echo "... trees/kRotScheme2.o"
 	@echo "... trees/kRotScheme2.i"
 	@echo "... trees/kRotScheme2.s"
 	@echo "... trees/kRotScheme3.o"
 	@echo "... trees/kRotScheme3.i"
 	@echo "... trees/kRotScheme3.s"
-	@echo "... trees/probabilisticKRot.o"
-	@echo "... trees/probabilisticKRot.i"
-	@echo "... trees/probabilisticKRot.s"
 	@echo "... trees/regularBST.o"
 	@echo "... trees/regularBST.i"
 	@echo "... trees/regularBST.s"
-	@echo "... trees/scheme1.o"
-	@echo "... trees/scheme1.i"
-	@echo "... trees/scheme1.s"
-	@echo "... trees/scheme2.o"
-	@echo "... trees/scheme2.i"
-	@echo "... trees/scheme2.s"
-	@echo "... trees/scheme3.o"
-	@echo "... trees/scheme3.i"
-	@echo "... trees/scheme3.s"
-	@echo "... trees/template.o"
-	@echo "... trees/template.i"
-	@echo "... trees/template.s"
-	@echo "... trees/vanilla.o"
-	@echo "... trees/vanilla.i"
-	@echo "... trees/vanilla.s"
+	@echo "... trees/splay.o"
+	@echo "... trees/splay.i"
+	@echo "... trees/splay.s"
 .PHONY : help
 
 

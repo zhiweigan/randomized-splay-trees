@@ -21,7 +21,6 @@ void Scheme3_2Rot::AccessSplay(s *x)
     while (x->parent) {
         int action = this->choice(this->generator);
         if (((action == 0) != this->invert)){
-            rotationCount -= 1;
             followedPointers += 1;
             if (x->parent->parent) {
                 x = x->parent->parent;

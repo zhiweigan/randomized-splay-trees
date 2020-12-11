@@ -3,27 +3,23 @@
 
 CMakeFiles/randomized_splay_trees.dir/main.cpp.o
  /Users/zhiweigan/Documents/randomized-splay-trees/main.cpp
+ /Users/zhiweigan/Documents/randomized-splay-trees/scientific.h
  /Users/zhiweigan/Documents/randomized-splay-trees/tests/VariadicTable.h
  /Users/zhiweigan/Documents/randomized-splay-trees/tests/tests.h
  /Users/zhiweigan/Documents/randomized-splay-trees/trees/trees.h
-CMakeFiles/randomized_splay_trees.dir/tests/alternatingDepthN.cpp.o
+CMakeFiles/randomized_splay_trees.dir/tests/lineTest.cpp.o
  /Users/zhiweigan/Documents/randomized-splay-trees/tests/VariadicTable.h
- /Users/zhiweigan/Documents/randomized-splay-trees/tests/alternatingDepthN.cpp
+ /Users/zhiweigan/Documents/randomized-splay-trees/tests/lineTest.cpp
  /Users/zhiweigan/Documents/randomized-splay-trees/tests/tests.h
  /Users/zhiweigan/Documents/randomized-splay-trees/trees/trees.h
-CMakeFiles/randomized_splay_trees.dir/tests/justone.cpp.o
+CMakeFiles/randomized_splay_trees.dir/tests/randomLineTest.cpp.o
  /Users/zhiweigan/Documents/randomized-splay-trees/tests/VariadicTable.h
- /Users/zhiweigan/Documents/randomized-splay-trees/tests/justone.cpp
+ /Users/zhiweigan/Documents/randomized-splay-trees/tests/randomLineTest.cpp
  /Users/zhiweigan/Documents/randomized-splay-trees/tests/tests.h
  /Users/zhiweigan/Documents/randomized-splay-trees/trees/trees.h
-CMakeFiles/randomized_splay_trees.dir/tests/random.cpp.o
+CMakeFiles/randomized_splay_trees.dir/tests/stackTest.cpp.o
  /Users/zhiweigan/Documents/randomized-splay-trees/tests/VariadicTable.h
- /Users/zhiweigan/Documents/randomized-splay-trees/tests/random.cpp
- /Users/zhiweigan/Documents/randomized-splay-trees/tests/tests.h
- /Users/zhiweigan/Documents/randomized-splay-trees/trees/trees.h
-CMakeFiles/randomized_splay_trees.dir/tests/splayline.cpp.o
- /Users/zhiweigan/Documents/randomized-splay-trees/tests/VariadicTable.h
- /Users/zhiweigan/Documents/randomized-splay-trees/tests/splayline.cpp
+ /Users/zhiweigan/Documents/randomized-splay-trees/tests/stackTest.cpp
  /Users/zhiweigan/Documents/randomized-splay-trees/tests/tests.h
  /Users/zhiweigan/Documents/randomized-splay-trees/trees/trees.h
 CMakeFiles/randomized_splay_trees.dir/tests/tester.cpp.o
@@ -31,16 +27,33 @@ CMakeFiles/randomized_splay_trees.dir/tests/tester.cpp.o
  /Users/zhiweigan/Documents/randomized-splay-trees/tests/tester.cpp
  /Users/zhiweigan/Documents/randomized-splay-trees/tests/tests.h
  /Users/zhiweigan/Documents/randomized-splay-trees/trees/trees.h
-CMakeFiles/randomized_splay_trees.dir/tests/zipf.cpp.o
+CMakeFiles/randomized_splay_trees.dir/tests/uniformTest.cpp.o
  /Users/zhiweigan/Documents/randomized-splay-trees/tests/VariadicTable.h
  /Users/zhiweigan/Documents/randomized-splay-trees/tests/tests.h
- /Users/zhiweigan/Documents/randomized-splay-trees/tests/zipf.cpp
+ /Users/zhiweigan/Documents/randomized-splay-trees/tests/uniformTest.cpp
  /Users/zhiweigan/Documents/randomized-splay-trees/trees/trees.h
-CMakeFiles/randomized_splay_trees.dir/trees/evenScheme.cpp.o
- /Users/zhiweigan/Documents/randomized-splay-trees/trees/evenScheme.cpp
+CMakeFiles/randomized_splay_trees.dir/tests/zipfTest.cpp.o
+ /Users/zhiweigan/Documents/randomized-splay-trees/tests/VariadicTable.h
+ /Users/zhiweigan/Documents/randomized-splay-trees/tests/tests.h
+ /Users/zhiweigan/Documents/randomized-splay-trees/tests/zipfTest.cpp
  /Users/zhiweigan/Documents/randomized-splay-trees/trees/trees.h
-CMakeFiles/randomized_splay_trees.dir/trees/kRotScheme.cpp.o
- /Users/zhiweigan/Documents/randomized-splay-trees/trees/kRotScheme.cpp
+CMakeFiles/randomized_splay_trees.dir/trees/2RotScheme1.cpp.o
+ /Users/zhiweigan/Documents/randomized-splay-trees/trees/2RotScheme1.cpp
+ /Users/zhiweigan/Documents/randomized-splay-trees/trees/trees.h
+CMakeFiles/randomized_splay_trees.dir/trees/2RotScheme2.cpp.o
+ /Users/zhiweigan/Documents/randomized-splay-trees/trees/2RotScheme2.cpp
+ /Users/zhiweigan/Documents/randomized-splay-trees/trees/trees.h
+CMakeFiles/randomized_splay_trees.dir/trees/2RotScheme3.cpp.o
+ /Users/zhiweigan/Documents/randomized-splay-trees/trees/2RotScheme3.cpp
+ /Users/zhiweigan/Documents/randomized-splay-trees/trees/trees.h
+CMakeFiles/randomized_splay_trees.dir/trees/even.cpp.o
+ /Users/zhiweigan/Documents/randomized-splay-trees/trees/even.cpp
+ /Users/zhiweigan/Documents/randomized-splay-trees/trees/trees.h
+CMakeFiles/randomized_splay_trees.dir/trees/kRotDeterministic.cpp.o
+ /Users/zhiweigan/Documents/randomized-splay-trees/trees/kRotDeterministic.cpp
+ /Users/zhiweigan/Documents/randomized-splay-trees/trees/trees.h
+CMakeFiles/randomized_splay_trees.dir/trees/kRotScheme1.cpp.o
+ /Users/zhiweigan/Documents/randomized-splay-trees/trees/kRotScheme1.cpp
  /Users/zhiweigan/Documents/randomized-splay-trees/trees/trees.h
 CMakeFiles/randomized_splay_trees.dir/trees/kRotScheme2.cpp.o
  /Users/zhiweigan/Documents/randomized-splay-trees/trees/kRotScheme2.cpp
@@ -48,24 +61,9 @@ CMakeFiles/randomized_splay_trees.dir/trees/kRotScheme2.cpp.o
 CMakeFiles/randomized_splay_trees.dir/trees/kRotScheme3.cpp.o
  /Users/zhiweigan/Documents/randomized-splay-trees/trees/kRotScheme3.cpp
  /Users/zhiweigan/Documents/randomized-splay-trees/trees/trees.h
-CMakeFiles/randomized_splay_trees.dir/trees/probabilisticKRot.cpp.o
- /Users/zhiweigan/Documents/randomized-splay-trees/trees/probabilisticKRot.cpp
- /Users/zhiweigan/Documents/randomized-splay-trees/trees/trees.h
 CMakeFiles/randomized_splay_trees.dir/trees/regularBST.cpp.o
  /Users/zhiweigan/Documents/randomized-splay-trees/trees/regularBST.cpp
  /Users/zhiweigan/Documents/randomized-splay-trees/trees/trees.h
-CMakeFiles/randomized_splay_trees.dir/trees/scheme1.cpp.o
- /Users/zhiweigan/Documents/randomized-splay-trees/trees/scheme1.cpp
+CMakeFiles/randomized_splay_trees.dir/trees/splay.cpp.o
+ /Users/zhiweigan/Documents/randomized-splay-trees/trees/splay.cpp
  /Users/zhiweigan/Documents/randomized-splay-trees/trees/trees.h
-CMakeFiles/randomized_splay_trees.dir/trees/scheme2.cpp.o
- /Users/zhiweigan/Documents/randomized-splay-trees/trees/scheme2.cpp
- /Users/zhiweigan/Documents/randomized-splay-trees/trees/trees.h
-CMakeFiles/randomized_splay_trees.dir/trees/scheme3.cpp.o
- /Users/zhiweigan/Documents/randomized-splay-trees/trees/scheme3.cpp
- /Users/zhiweigan/Documents/randomized-splay-trees/trees/trees.h
-CMakeFiles/randomized_splay_trees.dir/trees/template.cpp.o
- /Users/zhiweigan/Documents/randomized-splay-trees/trees/template.cpp
- /Users/zhiweigan/Documents/randomized-splay-trees/trees/trees.h
-CMakeFiles/randomized_splay_trees.dir/trees/vanilla.cpp.o
- /Users/zhiweigan/Documents/randomized-splay-trees/trees/trees.h
- /Users/zhiweigan/Documents/randomized-splay-trees/trees/vanilla.cpp

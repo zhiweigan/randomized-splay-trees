@@ -59,17 +59,16 @@ void AlternatingDepthNTest::Access(int n, SplayTree* tree, vector<int> inserted)
 
 map<string, result> AlternatingDepthNTest::RunOnTrees(map<string, SplayTree*>* trees) {
 
-    cout<<"Testing AlternatingDepthNTest"<<endl;
+    cout<<"Testing Random Line"<<endl;
     map<string, result> out;
     for(pair<string, SplayTree*> tree : *trees){
-        cout<<tree.first<<endl;
+
         SplayTree* t = tree.second;
-        if (
-                tree.first.find("BST") != string::npos
-                || tree.first.find("1-") != string::npos
-                || tree.first.find("d-1") != string::npos
-                || tree.first.find("3b: III-Rand-2, 0") != string::npos
-                ){
+        if (tree.first.find("BST") != string::npos
+        || tree.first.find("1-") != string::npos
+        || tree.first.find("d-1") != string::npos
+        || tree.first.find("3b: III-Rand-2, 0") != string::npos
+        ){
             if (trial > 5000) {
                 out.insert(make_pair(tree.first, result(0, 0)));
                 continue;

@@ -42,7 +42,7 @@ vector<double> ZipfTest::MakeDist(int N, double zipfS, vector<int> inserted) {
 
 map<string, result> ZipfTest::RunOnTrees(map<string, SplayTree*>* trees) {
 
-    cout<<"Testing ZipfTest"<<endl;
+    cout<<"Testing Zipf"<<endl;
     map<string, result> out;
 
     for(pair<string, SplayTree*> tree : *trees){

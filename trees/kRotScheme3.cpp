@@ -9,7 +9,6 @@ void Scheme3_1Rot::AccessSplay(s* x)
     while (x->parent) {
         int action = this->choice(this->generator);
         if (((action == 0) != this->invert)){
-            rotationCount -= 1;
             followedPointers += 1;
             if (x->parent) {
                 x = x->parent;
@@ -26,7 +25,6 @@ void Scheme3_3Rot::AccessSplay(s *x)
     while (x->parent) {
         int action = this->choice(this->generator);
         if (((action == 0) != this->invert)){
-            rotationCount -= 1;
             followedPointers += 1;
             if (x->parent->parent && x->parent->parent->parent) {
                 x = x->parent->parent->parent;
@@ -108,7 +106,6 @@ void Scheme3_4Rot::AccessSplay(s *x) {
     while (x->parent) {
         int action = this->choice(this->generator);
         if (((action == 0) != this->invert)){
-            rotationCount -= 1;
             followedPointers += 1;
             if (x->parent->parent && x->parent->parent->parent && x->parent->parent->parent->parent) {
                 x = x->parent->parent->parent->parent;

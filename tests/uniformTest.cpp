@@ -41,7 +41,7 @@ void RandomTest::Access(int n, SplayTree* tree) { // Inserts n items between 1 t
 
 map<string, result> RandomTest::RunOnTrees(map<string, SplayTree*>* trees) {
 
-    cout<<"Testing RandomTest"<<endl;
+    cout<<"Testing Uniform"<<endl;
     map<string, result> out;
 
     for(pair<string, SplayTree*> tree : *trees){
